@@ -1,0 +1,27 @@
+.container {
+  padding: 0 5vh 0 35vh;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  padding: 3rem;
+}
+
+.skills a {
+  padding: 2rem;
+}
+
+.tools a {
+  padding: 2rem;
+}
+
+.container a:hover {
+  color: var(--dark-brown);
+  transition: 1s;
+}

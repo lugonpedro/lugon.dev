@@ -1,0 +1,46 @@
+.container {
+  padding: 0 5vh 0 35vh;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+.container h1 {
+  padding: 0.5rem;
+}
+
+.container h2 {
+  padding-bottom: 1rem;
+}
+
+.container p {
+  padding: 0 15vh;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--light-brown);
+}
+
+.icons {
+  padding: 1.5rem;
+}
+
+.icons a {
+  padding: 1vh;
+}
+
+.container a:hover {
+  color: var(--dark-brown);
+  transition: 0.2s;
+}
