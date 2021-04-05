@@ -7,16 +7,16 @@ import lugbot from "../assets/lugbot.png";
 export const projects = [
   {
     id: 1,
-    slang: "abservar",
-    title: "Abservar",
+    slang: "mate",
+    title: "Mate",
     description:
-      "Site portfólio feito em React para agregar ao trabalho do cliente",
-    image: abservar,
-    imagealt: "Site Abservar",
+      "App que facilita o encontro de quem utiliza do transporte escolar",
+    image: mate,
+    imagealt: "App Monitoramento Automatizado de Transporte Escolar",
     summary:
-      "Site de portfólio feito em React e CSS puro, criado com o intuito de agregar ao trabalho do cliente e reunir locais virtuais de trabalhos do mesmo.",
-    link: "https://abservar-1ugon.vercel.app/",
-    source: "https://github.com/1ugon/abservar",
+      "MATE significa Monitoramento Automatizado de Transporte Escolar e é um aplicativo mobile feito em React Native para o Trabalho de Conclusão de Curso na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps para conseguir a localização do usuário, desse modo encontrando motoristas que se adequam melhor a sua rotina. Projeto atualmente arquivado.",
+    link: "",
+    source: "https://github.com/1ugon/Mate",
   },
   {
     id: 2,
@@ -32,19 +32,6 @@ export const projects = [
   },
   {
     id: 3,
-    slang: "mate",
-    title: "Mate",
-    description:
-      "App que facilita o encontro de quem utiliza do transporte escolar",
-    image: mate,
-    imagealt: "App Monitoramento Automatizado de Transporte Escolar",
-    summary:
-      "MATE significa Monitoramento Automatizado de Transporte Escolar e é um aplicativo mobile feito em React Native para o Trabalho de Conclusão de Curso na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps para conseguir a localização do usuário, desse modo encontrando motoristas que se adequam melhor a sua rotina. Projeto atualmente arquivado.",
-    link: "",
-    source: "https://github.com/1ugon/Mate",
-  },
-  {
-    id: 4,
     slang: "onichan",
     title: "Bot Onichan",
     description: "Bot de Discord que mostra informações do My Anime List",
@@ -55,6 +42,19 @@ export const projects = [
     link:
       "https://discord.com/oauth2/authorize?client_id=805520334111375410&scope=bot&permissions=8",
     source: "https://github.com/1ugon/bot-onichan",
+  },
+  {
+    id: 4,
+    slang: "abservar",
+    title: "Abservar",
+    description:
+      "Site portfólio feito em React para agregar ao trabalho do cliente",
+    image: abservar,
+    imagealt: "Site Abservar",
+    summary:
+      "Site de portfólio feito em React e CSS puro, criado com o intuito de agregar ao trabalho do cliente e reunir locais virtuais de trabalhos do mesmo.",
+    link: "https://abservar-1ugon.vercel.app/",
+    source: "https://github.com/1ugon/abservar",
   },
   {
     id: 5,

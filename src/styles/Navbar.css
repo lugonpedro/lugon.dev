@@ -36,15 +36,15 @@
   -webkit-text-stroke-color: black;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .container {
     display: block;
     height: 10vh;
     width: 100vh;
+    padding: 1vh;
   }
 
   .button {
-    height: 10vh;
     display: flex;
     border: none;
   }
@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .button {
     padding: 1rem;
   }
