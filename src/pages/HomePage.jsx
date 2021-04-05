@@ -5,6 +5,7 @@ import SectionAbout from "../components/organisms/SectionAbout";
 import SectionExperience from "../components/organisms/SectionExperience";
 import SectionProjects from "../components/organisms/SectionProjects";
 import SectionSkills from "../components/organisms/SectionSkills";
+import Footer from "../components/molecules/Footer";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <SectionSkills />
       <SectionProjects />
       <SectionExperience />
+      <Footer />
     </>
   );
 }

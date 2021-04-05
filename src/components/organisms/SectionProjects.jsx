@@ -2,14 +2,15 @@ import React from "react";
 
 import styles from "../../styles/SectionProjects.module.css";
 
+import { Link } from "react-router-dom";
 import { projects } from "../../data/projects";
-
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function SectionProjects() {
   return (
     <div className="SectionProjects">
       <div className={styles.container}>
+        <h1>PROJETOS</h1>
         {projects.map((project) => (
           <div className={styles.project} key={project.id}>
             <div className={styles.grid}>
@@ -18,9 +19,9 @@ function SectionProjects() {
                 <p>{project.description}</p>
               </div>
               <div>
-                <a href="#">
+                <Link to={`/project/${project.slang}`}>
                   <FaArrowAltCircleRight size={50} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
