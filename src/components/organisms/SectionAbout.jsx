@@ -9,7 +9,7 @@ function SectionAbout() {
   return (
     <div className="SectionAbout">
       <div className={styles.container}>
-        <img src={lugon} />
+        <img src={lugon} alt="Pedro Lugon" />
         <h1>PEDRO LUGON</h1>
         <a href="mailto:pedrolugonm@gmail.com">
           <h2>pedrolugonm@gmail.com</h2>

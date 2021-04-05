@@ -13,15 +13,15 @@
   padding: 3rem;
 }
 
-.skills a {
+.skills i {
   padding: 2rem;
 }
 
-.tools a {
+.tools i {
   padding: 2rem;
 }
 
-.container a:hover {
+.container i:hover {
   color: var(--dark-brown);
   transition: 1s;
 }
