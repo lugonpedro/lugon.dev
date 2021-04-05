@@ -50,4 +50,7 @@
 }
 
 @media (max-width: 720px) {
+  .container {
+    height: 100vh;
+  }
 }

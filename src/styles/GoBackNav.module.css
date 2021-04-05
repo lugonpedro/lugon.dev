@@ -7,9 +7,7 @@
 
 @media (max-width: 1080px) {
   .container {
+    height: 12vh;
     padding: 3vh;
   }
-}
-
-@media (max-width: 720px) {
 }

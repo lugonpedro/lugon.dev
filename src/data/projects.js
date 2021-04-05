@@ -14,7 +14,7 @@ export const projects = [
     image: mate,
     imagealt: "App Monitoramento Automatizado de Transporte Escolar",
     summary:
-      "MATE significa Monitoramento Automatizado de Transporte Escolar e é um aplicativo mobile feito em React Native para o Trabalho de Conclusão de Curso na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps para conseguir a localização do usuário, desse modo encontrando motoristas que se adequam melhor a sua rotina. Projeto atualmente arquivado.",
+      "Monitoramento Automatizado de Transporte Escolar e é um aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps. Projeto atualmente arquivado.",
     link: "",
     source: "https://github.com/1ugon/Mate",
   },

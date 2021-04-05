@@ -52,8 +52,8 @@
   }
 
   .container img {
-    max-width: 45vh;
-    margin: 3vh;
+    max-width: 40vh;
+    margin-top: 1vh;
   }
 
   .project {
@@ -61,9 +61,6 @@
   }
 
   .projectlinks {
-    padding: 5rem;
+    padding: 2rem;
   }
-}
-
-@media (max-width: 720px) {
 }
