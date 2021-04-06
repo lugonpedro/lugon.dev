@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .container h1 {
@@ -19,12 +20,7 @@
 @media (max-width: 1080px) {
   .container {
     padding: 6vh;
-    width: 100%;
     height: 125vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 
