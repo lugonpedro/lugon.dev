@@ -10,7 +10,7 @@ export const projects = [
     slang: "mate",
     title: "Mate",
     description:
-      "App que facilita o encontro de quem utiliza do transporte escolar",
+      "App que facilita o encontro de quem utiliza o transporte escolar",
     image: mate,
     imagealt: "App Monitoramento Automatizado de Transporte Escolar",
     summary:

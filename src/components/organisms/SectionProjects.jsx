@@ -8,25 +8,22 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function SectionProjects() {
   return (
-    <div className="SectionProjects">
-      <div className={styles.container}>
-        <h1>PROJETOS</h1>
-        {projects.map((project) => (
-          <div className={styles.project} key={project.id}>
-            <div className={styles.grid}>
-              <div>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-              <div>
-                <Link to={`/project/${project.slang}`}>
-                  <FaArrowAltCircleRight size={50} />
-                </Link>
-              </div>
+    <div className={styles.container} id="SectionProjects">
+      {projects.map((project) => (
+        <div className={styles.project} key={project.id}>
+          <div className={styles.grid}>
+            <div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+            <div>
+              <Link to={`/project/${project.slang}`}>
+                <FaArrowAltCircleRight size={50} />
+              </Link>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
