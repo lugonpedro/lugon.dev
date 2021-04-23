@@ -13,8 +13,18 @@
   padding: 3rem 0;
 }
 
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
 .skills i {
   padding: 0 2rem;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
 }
 
 .tools i {
@@ -32,13 +42,11 @@
   }
 
   .skills {
-    display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 2rem;
   }
 
   .tools {
-    display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 2rem;
   }
