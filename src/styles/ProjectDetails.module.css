@@ -9,9 +9,8 @@
 .container img {
   max-width: 100vh;
   margin: 5vh;
-  padding: 1vh;
+  padding: 0.5vh;
   background-color: var(--green);
-  border-radius: 10%;
 }
 
 .project {
