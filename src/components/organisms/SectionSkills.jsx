@@ -12,6 +12,8 @@ import {
   FaReact,
   FaNode,
   FaDatabase,
+  FaPhp,
+  FaLaravel,
 } from "react-icons/fa";
 
 function SectionSkills() {
@@ -34,6 +36,9 @@ function SectionSkills() {
         <i title="Python">
           <FaPython size={50} />
         </i>
+        <i title="PHP">
+          <FaPhp size={50} />
+        </i>
       </div>
       <h1>FERRAMENTAS</h1>
       <div className={styles.tools}>
@@ -45,6 +50,9 @@ function SectionSkills() {
         </i>
         <i title="Node JS">
           <FaNode size={50} />
+        </i>
+        <i title="Laravel">
+          <FaLaravel size={50} />
         </i>
         <i title="Bancos de dados relacionais e não relacionais">
           <FaDatabase size={50} />
