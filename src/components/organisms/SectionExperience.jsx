@@ -29,11 +29,7 @@ function SectionExperience() {
         <h2>Freelancer</h2>
         <h3>Remoto</h3>
         <h4>(Janeiro/2021 - atual)</h4>
-        <p>
-          Freelancer na parte de desenvolvimento web, em sites e sistemas,
-          feitos em Javascript com a ferramenta React, e um pouco de
-          desenvolvimento mobile em React Native.
-        </p>
+        <p>Freelancer trabalhando com desenvolvimento web e mobile.</p>
 
         <h2>Estágio na UDF</h2>
         <h3>Remoto</h3>
