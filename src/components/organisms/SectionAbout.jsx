@@ -16,10 +16,10 @@ function SectionAbout() {
       <p>
         Nascido em 1998, sou um estudante de Sistemas da Informação pela
         faculdade UDF e moro em Brasília, programo assiduamente desde 2019 e
-        faço livecoding na twitch como hobbie, gosto muito de procurar aprender
-        mais e participar de projetos em que estejam dispostos a fazer coisas
-        novas. Me considero desenvolvedor back-end porém estou em busca de ser
-        um bom fullstack.
+        faço livecoding na twitch como hobbie, gosto de aprender mais e
+        participar de projetos que estejam dispostos a fazer coisas novas. Me
+        considero desenvolvedor back-end porém estou em busca de ser um bom
+        fullstack.
       </p>
       <div className={styles.icons}>
         <a target="_blank" rel="noreferrer" href="http://github.com/1ugon">
