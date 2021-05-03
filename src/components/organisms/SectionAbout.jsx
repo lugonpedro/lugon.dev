@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../../styles/SectionAbout.module.css";
 
 import lugon from "../../assets/lugon.jpg";
-import { FaGithub, FaTwitch, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitch, FaTwitter, FaChevronDown } from "react-icons/fa";
 
 function SectionAbout() {
   return (
@@ -36,6 +36,7 @@ function SectionAbout() {
           <FaTwitter size={50} />
         </a>
       </div>
+      <FaChevronDown size={30} />
     </div>
   );
 }
