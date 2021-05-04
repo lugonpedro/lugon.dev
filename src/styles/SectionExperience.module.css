@@ -20,12 +20,6 @@
 @media (max-width: 1080px) {
   .container {
     padding: 6vh;
-    height: 125vh;
-  }
-}
-
-@media (max-width: 720px) {
-  .container {
-    height: 200vh;
+    height: 150vh;
   }
 }
