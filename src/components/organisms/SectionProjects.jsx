@@ -9,6 +9,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 function SectionProjects() {
   return (
     <div className={styles.container} id="SectionProjects">
+      <h1>PROJETOS</h1>
       {projects.map((project) => (
         <div className={styles.project} key={project.id}>
           <div className={styles.grid}>
