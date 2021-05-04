@@ -23,17 +23,28 @@ function SectionAbout() {
         fullstack.
       </p>
       <div className={styles.icons}>
-        <a target="_blank" rel="noreferrer" href="http://github.com/1ugon">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="http://github.com/1ugon"
+          title="GitHub"
+        >
           <FaGithub size={50} />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.twitch.tv/lugondev"
+          title="Twitch"
         >
           <FaTwitch size={50} />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://twitter.com/lu9on">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://twitter.com/lu9on"
+          title="Twitter"
+        >
           <FaTwitter size={50} />
         </a>
       </div>
@@ -44,6 +55,7 @@ function SectionAbout() {
         smooth={true}
         offset={-70}
         duration={500}
+        className={styles.arrowdown}
       >
         <FaChevronDown size={30} />
       </Link>

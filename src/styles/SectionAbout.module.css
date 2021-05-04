@@ -33,6 +33,10 @@
   color: var(--light-brown);
 }
 
+.container .arrowdown {
+  cursor: pointer;
+}
+
 .icons {
   padding: 1.5rem;
 }
@@ -43,7 +47,7 @@
 
 .container a:hover {
   color: var(--dark-brown);
-  transition: 0.2s;
+  transition: 1s;
 }
 
 @media (max-width: 1080px) {
