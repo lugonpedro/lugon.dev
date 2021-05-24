@@ -9,7 +9,7 @@
 }
 
 .container h1 {
-  text-align: left;
+  text-align: center;
   margin-left: 1.5vh;
 }
 
@@ -33,6 +33,24 @@
 }
 
 .project a:hover {
+  color: var(--dark-brown);
+  transition: 0.2s;
+}
+
+.more {
+  text-decoration: none;
+  color: var(--light-brown);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more h3 {
+  margin-right: 0.5vw;
+}
+
+.more:hover {
   color: var(--dark-brown);
   transition: 0.2s;
 }

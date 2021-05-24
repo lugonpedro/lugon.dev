@@ -2,7 +2,6 @@ import abservar from "../assets/abservar.png";
 import autoescola from "../assets/autoescola.png";
 import mate from "../assets/mate.png";
 import onichan from "../assets/onichan.png";
-import lugbot from "../assets/lugbot.png";
 import festivaltf from "../assets/festivaltf.png";
 
 export const projects = [
@@ -58,18 +57,6 @@ export const projects = [
   },
   {
     id: 5,
-    slang: "lugbot",
-    title: "Lug Bot",
-    description: "Bot de Discord que avisa sempre que minha live entra ao vivo",
-    image: lugbot,
-    imagealt: "Lug Bot",
-    summary:
-      "Bot de Discord feito com o Discord JS integrado a API da Twitch.tv que recebe quando minha live fica ao vivo e avisa no servidor. Projeto open source feito por pura diversão, facilitação e vontade de aprender tecnologias novas!",
-    link: "https://discord.com/oauth2/authorize?client_id=809327272381120533&scope=bot&permissions=8",
-    source: "https://github.com/1ugon/lugbot",
-  },
-  {
-    id: 6,
     slang: "festivaltf",
     title: "Festival Transfeminista",
     description: "Site interativo criado para festival online",

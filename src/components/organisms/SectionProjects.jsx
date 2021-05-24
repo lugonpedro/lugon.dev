@@ -4,7 +4,7 @@ import styles from "../../styles/SectionProjects.module.css";
 
 import { Link } from "react-router-dom";
 import { projects } from "../../data/projects";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaGithub } from "react-icons/fa";
 
 function SectionProjects() {
   return (
@@ -25,6 +25,15 @@ function SectionProjects() {
           </div>
         </div>
       ))}
+      <a
+        className={styles.more}
+        href="https://github.com/1ugon"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h3>Veja mais projetos no GitHub</h3>
+        <FaGithub />
+      </a>
     </div>
   );
 }
