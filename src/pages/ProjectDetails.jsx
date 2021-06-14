@@ -5,7 +5,7 @@ import GoBackNav from "../components/molecules/GoBackNav";
 import { useParams } from "react-router-dom";
 import { useProject } from "../data/projects";
 
-import { FaGithub, FaSeedling } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 import styles from "../styles/ProjectDetails.module.css";
 
@@ -31,7 +31,7 @@ function ProjectDetails() {
                 ""
               ) : (
                 <a target="_blank" rel="noreferrer" href={project.link}>
-                  <FaSeedling size={30} />
+                  <FaLink size={30} />
                   <p>LINK</p>
                 </a>
               )}

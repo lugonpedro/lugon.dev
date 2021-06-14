@@ -1,8 +1,7 @@
-import abservar from "../assets/abservar.png";
-import autoescola from "../assets/autoescola.png";
 import mate from "../assets/mate.png";
 import onichan from "../assets/onichan.png";
 import festivaltf from "../assets/festivaltf.png";
+import mercadodasestrelas from "../assets/mercadodasestrelas.png";
 
 export const projects = [
   {
@@ -20,18 +19,6 @@ export const projects = [
   },
   {
     id: 2,
-    slang: "autoescola",
-    title: "Auto Escola",
-    description:
-      "Site de auto escola feito através do curso React Profissional ministrado pelo professor Bruno Nardini",
-    image: autoescola,
-    summary:
-      "Site exemplo de auto escola para mostrar o conhecimento aprendido em React e CSS",
-    link: "https://react-pro-taupe.vercel.app/",
-    source: "https://github.com/1ugon/react-pro",
-  },
-  {
-    id: 3,
     slang: "onichan",
     title: "Bot Onichan",
     description: "Bot de Discord que mostra informações do My Anime List",
@@ -43,20 +30,7 @@ export const projects = [
     source: "https://github.com/1ugon/bot-onichan",
   },
   {
-    id: 4,
-    slang: "abservar",
-    title: "Abservar",
-    description:
-      "Site portfólio feito em React para agregar ao trabalho do cliente",
-    image: abservar,
-    imagealt: "Site Abservar",
-    summary:
-      "Site de portfólio feito em React e CSS puro, criado com o intuito de agregar ao trabalho do cliente e reunir locais virtuais de trabalhos do mesmo.",
-    link: "https://abservar-1ugon.vercel.app/",
-    source: "https://github.com/1ugon/abservar",
-  },
-  {
-    id: 5,
+    id: 3,
     slang: "festivaltf",
     title: "Festival Transfeminista",
     description: "Site interativo criado para festival online",
@@ -66,6 +40,17 @@ export const projects = [
       "Site interativo para festival feito em React, de acordo com as necessidades e vontades do cliente, com o intuito de agregar valor ao festival que ocorre em Coimbra e precisava de um espaço online por questões pandêmicas.",
     link: "https://www.festivaltransfeminista.com/",
     source: "https://github.com/1ugon/festivaltf",
+  },
+  {
+    id: 4,
+    slang: "mercadodasestrelas",
+    title: "Mercado das Estrelas",
+    description: "Site feito para processo seletivo em empresa.",
+    image: mercadodasestrelas,
+    summary:
+      "Site de pedidos baseado em Star Wars, feito de acordo com as regras de negócio que foram pedidos, totalmente em React.",
+    link: "https://mercado-das-estrelas.vercel.app/",
+    source: "https://github.com/1ugon/mercado-das-estrelas",
   },
 ];
 
