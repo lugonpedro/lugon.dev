@@ -45,7 +45,7 @@ export const projects = [
     id: 4,
     slang: "mercadodasestrelas",
     title: "Mercado das Estrelas",
-    description: "Site feito para processo seletivo em empresa.",
+    description: "Site feito para processo seletivo em empresa",
     image: mercadodasestrelas,
     summary:
       "Site de pedidos baseado em Star Wars, feito de acordo com as regras de negócio que foram pedidos, totalmente em React.",
