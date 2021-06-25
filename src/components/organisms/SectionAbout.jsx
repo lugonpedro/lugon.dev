@@ -3,8 +3,7 @@ import React from "react";
 import styles from "../../styles/SectionAbout.module.css";
 
 import lugon from "../../assets/lugon.jpg";
-import { FaGithub, FaTwitch, FaTwitter, FaChevronDown } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function SectionAbout() {
   return (
@@ -16,11 +15,9 @@ function SectionAbout() {
       </a>
       <p>
         Nascido em 1998, sou um estudante de Sistemas da Informação pela
-        faculdade UDF e moro em Brasília, programo assiduamente desde 2019 e
-        faço livecoding na twitch como hobbie, gosto de aprender mais e
-        participar de projetos que estejam dispostos a fazer coisas novas. Me
-        considero desenvolvedor back-end porém estou em busca de ser um bom
-        fullstack.
+        faculdade UDF, moro em Brasília e programo assiduamente desde 2019.
+        Gosto de estar em constante aprendizado e participar de projetos em que
+        estejam engajados com ideias novas.
       </p>
       <div className={styles.icons}>
         <a
@@ -34,31 +31,12 @@ function SectionAbout() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.twitch.tv/lugondev"
-          title="Twitch"
+          href="https://www.linkedin.com/in/1ugon/"
+          title="LinkedIn"
         >
-          <FaTwitch size={50} />
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://twitter.com/lu9on"
-          title="Twitter"
-        >
-          <FaTwitter size={50} />
+          <FaLinkedinIn size={50} />
         </a>
       </div>
-      <Link
-        activeClass="active"
-        to="SectionSkills"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        className={styles.arrowdown}
-      >
-        <FaChevronDown size={30} />
-      </Link>
     </div>
   );
 }
