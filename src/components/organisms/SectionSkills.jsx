@@ -19,7 +19,7 @@ import {
 function SectionSkills() {
   return (
     <div className={styles.container} id="SectionSkills">
-      <h1>HABILIDADES</h1>
+      <h1>LINGUAGENS</h1>
       <div className={styles.skills}>
         <i title="HTML">
           <FaHtml5 size={50} />
