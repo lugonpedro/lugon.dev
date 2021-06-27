@@ -10,8 +10,8 @@
 }
 
 .container img {
-  width: 30vh;
-  height: 30vh;
+  max-width: 30vh;
+  max-height: 30vh;
   border-radius: 50%;
 }
 
@@ -31,10 +31,6 @@
 .container a {
   text-decoration: none;
   color: var(--light-brown);
-}
-
-.container .arrowdown {
-  cursor: pointer;
 }
 
 .icons {
