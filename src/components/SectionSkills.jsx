@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../../styles/SectionSkills.module.css";
+import styles from "../styles/SectionSkills.module.css";
 
 import {
   FaHtml5,
@@ -8,7 +8,6 @@ import {
   FaJava,
   FaJs,
   FaPython,
-  FaNpm,
   FaReact,
   FaNode,
   FaDatabase,
@@ -42,10 +41,7 @@ function SectionSkills() {
       </div>
       <h1>FERRAMENTAS</h1>
       <div className={styles.tools}>
-        <i title="NPM">
-          <FaNpm size={50} />
-        </i>
-        <i title="React">
+        <i title="React e React Native">
           <FaReact size={50} />
         </i>
         <i title="Node JS">

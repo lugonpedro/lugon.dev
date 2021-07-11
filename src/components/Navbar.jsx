@@ -1,23 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { FaTimes, FaBars } from "react-icons/fa";
+import styles from "../styles/Navbar.module.css";
+
 import { Link } from "react-scroll";
 
-import "../../styles/Navbar.css";
-
 function Navbar() {
-  const [clicked, setClicked] = useState(false);
-
-  function handleClick() {
-    setClicked(!clicked);
-  }
-
   return (
-    <nav className="container">
-      <button className="button" onClick={handleClick}>
-        {clicked ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </button>
-      <div className={clicked ? "nav-menu active" : "nav-menu"}>
+    <nav className={styles.container}>
+      <div>
         <ul>
           <li>
             <Link
@@ -27,9 +17,6 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              onClick={() => {
-                handleClick();
-              }}
             >
               SOBRE
             </Link>
@@ -42,9 +29,6 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              onClick={() => {
-                handleClick();
-              }}
             >
               HABILIDADES
             </Link>
@@ -57,9 +41,6 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              onClick={() => {
-                handleClick();
-              }}
             >
               PROJETOS
             </Link>
@@ -72,9 +53,6 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              onClick={() => {
-                handleClick();
-              }}
             >
               EXPERIÊNCIA
             </Link>

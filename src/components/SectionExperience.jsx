@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../../styles/SectionExperience.module.css";
+import styles from "../styles/SectionExperience.module.css";
 
 function SectionExperience() {
   return (
