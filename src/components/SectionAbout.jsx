@@ -15,7 +15,7 @@ function SectionAbout() {
         em 1998, moro em Brasília e programo assiduamente desde 2019, tive minha
         primeira experiência com programação em 2017 com a linguagem Java, desde
         então procuro conhecer tecnologias novas que me tragam desempenho e
-        praticidade para resolver os problemas, atualmente estou estudando
+        praticidade para resolver problemas, atualmente estou estudando
         desenvolvimento web e mobile, focado no ecosistema de React, React
         Native e NodeJS.
       </p>
