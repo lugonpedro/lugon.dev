@@ -1,8 +1,8 @@
 .container {
-  padding: 0 5vh 0 35vh;
+  padding: 0 5vh;
   width: 100%;
   height: 100vh;
-  background-color: var(--white);
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,8 @@
   max-width: 30vh;
   max-height: 30vh;
   border-radius: 50%;
+  padding: 1vh;
+  background-color: var(--green);
 }
 
 .container h1 {
@@ -30,7 +32,7 @@
 
 .container a {
   text-decoration: none;
-  color: var(--light-brown);
+  color: var(--green);
 }
 
 .icons {
@@ -42,14 +44,14 @@
 }
 
 .container a:hover {
-  color: var(--dark-brown);
+  color: var(--darkgreen);
   transition: 1s;
 }
 
 @media (max-width: 1080px) {
   .container {
     padding: 0;
-    height: 150vh;
+    height: 120vh;
   }
 
   .container img {
@@ -61,7 +63,4 @@
   .container p {
     padding: 0 10vh;
   }
-}
-
-@media (max-width: 720px) {
 }

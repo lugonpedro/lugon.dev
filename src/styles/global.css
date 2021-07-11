@@ -8,11 +8,10 @@
 }
 
 :root {
-  --grey: #b0b2b0;
-  --white: #ffffff;
-  --green: #00642a;
-  --light-brown: #cc9251;
-  --dark-brown: #b26829;
+  --primary: #eeede7;
+  --secundary: #868b8e;
+  --green: #81b622;
+  --darkgreen: #59981a;
 }
 
 @media (max-width: 1080px) {

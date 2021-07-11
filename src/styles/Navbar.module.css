@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--primary);
+  padding: 3vh 0;
+  position: fixed;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5vw;
+  font-size: 2vh;
+}
+
+.container li {
+  list-style: none;
+  cursor: pointer;
+  color: var(--green);
+}
+
+.container li:hover {
+  color: var(--darkgreen);
+}
+
+@media (max-width: 1080px) {
+  .container {
+    display: none;
+  }
+}
