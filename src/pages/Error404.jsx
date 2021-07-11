@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaRegSadTear } from "react-icons/fa";
 
-import GoBackNav from "../components/molecules/GoBackNav";
+import GoBackNav from "../components/GoBackNav";
 
 import styles from "../styles/Error404.module.css";
 

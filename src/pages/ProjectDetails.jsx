@@ -1,6 +1,6 @@
 import React from "react";
 import Error404 from "./Error404";
-import GoBackNav from "../components/molecules/GoBackNav";
+import GoBackNav from "../components/GoBackNav";
 
 import { useParams } from "react-router-dom";
 import { useProject } from "../data/projects";
@@ -20,9 +20,7 @@ function ProjectDetails() {
       <>
         <GoBackNav />
         <div className={styles.container}>
-          <div className={styles.projectimage}>
-            <img src={project.image} alt={project.imagealt} />
-          </div>
+          <img src={project.image} alt={project.imagealt} />
           <div className={styles.project}>
             <h3>{project.title}</h3>
             <p>{project.summary}</p>
@@ -30,7 +28,7 @@ function ProjectDetails() {
               {project.link === "" ? (
                 ""
               ) : (
-                <a target="_blank" rel="noreferrer" href={project.link}>
+                <a href={project.link}>
                   <FaLink size={30} />
                   <p>LINK</p>
                 </a>
@@ -38,7 +36,7 @@ function ProjectDetails() {
               {project.source === "" ? (
                 ""
               ) : (
-                <a target="_blank" rel="noreferrer" href={project.source}>
+                <a href={project.source}>
                   <FaGithub size={30} />
                   <p>CODE</p>
                 </a>
