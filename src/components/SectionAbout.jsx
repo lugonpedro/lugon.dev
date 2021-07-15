@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../styles/SectionAbout.module.css";
 
 import lugon from "../assets/lugon.jpg";
+import CV from "../assets/cv.pdf";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function SectionAbout() {
@@ -19,6 +20,9 @@ function SectionAbout() {
         desenvolvimento web e mobile, focado no ecosistema de React, React
         Native e NodeJS.
       </p>
+      <a href={CV} className={styles.cv}>
+        Baixar CV
+      </a>
       <div className={styles.icons}>
         <a href="http://github.com/1ugon" title="GitHub">
           <FaGithub size={50} />

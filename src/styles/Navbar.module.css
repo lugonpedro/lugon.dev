@@ -23,6 +23,7 @@
 
 .container li:hover {
   color: var(--darkgreen);
+  transition: 0.2s;
 }
 
 @media (max-width: 1080px) {

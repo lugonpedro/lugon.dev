@@ -33,7 +33,7 @@
 
 .container i:hover {
   color: var(--darkgreen);
-  transition: 1s;
+  transition: 0.8s;
 }
 
 @media (max-width: 1080px) {

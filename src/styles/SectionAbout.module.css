@@ -28,9 +28,10 @@
 
 .container p {
   padding: 0 15vh;
+  margin-bottom: 20px;
 }
 
-.container a {
+.container .icons a {
   text-decoration: none;
   color: var(--green);
 }
@@ -43,9 +44,27 @@
   padding: 1vh;
 }
 
-.container a:hover {
+.container .icons a:hover {
   color: var(--darkgreen);
-  transition: 1s;
+  transition: 0.2s;
+}
+
+.container .cv {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--green);
+  border-width: 0;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .cv:hover {
+  background-color: var(--darkgreen);
+  transition: 0.2s;
 }
 
 @media (max-width: 1080px) {
