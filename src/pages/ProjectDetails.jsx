@@ -9,6 +9,8 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 import styles from "../styles/ProjectDetails.module.css";
 
+import MetaTags from "react-meta-tags";
+
 function ProjectDetails() {
   const params = useParams();
   const project = useProject(params.slang);
@@ -18,6 +20,12 @@ function ProjectDetails() {
   } else {
     return (
       <>
+        <MetaTags>
+          <title>{project.title}</title>
+          <meta name="description" content={project.summary} />
+          <meta property="og:image" content={project.image} />
+        </MetaTags>
+
         <GoBackNav />
         <div className={styles.container}>
           <img src={project.image} alt={project.imagealt} />
