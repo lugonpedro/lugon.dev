@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 
 import MetaTags from "react-meta-tags";
 
+import lugon from "../assets/lugon.jpg";
+
 function HomePage() {
   return (
     <>
@@ -16,7 +18,7 @@ function HomePage() {
         <title>Pedro Lugon</title>
         <meta name="description" content="Site portfólio do Pedro Lugon" />
         <meta name="keywords" content="desenvolvedor, web, mobile" />
-        <meta property="og:image" content="../src/assets/lugon.jpg" />
+        <meta property="og:image" content={lugon} />
       </MetaTags>
       <Navbar />
       <SectionAbout />
