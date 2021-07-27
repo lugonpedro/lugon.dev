@@ -20,9 +20,6 @@ function SectionAbout() {
         desenvolvimento web e mobile, focado no ecosistema de React, React
         Native e NodeJS.
       </p>
-      <a href={CV} className={styles.cv}>
-        Baixar CV
-      </a>
       <div className={styles.icons}>
         <a href="http://github.com/1ugon" title="GitHub">
           <FaGithub size={50} />
@@ -34,6 +31,9 @@ function SectionAbout() {
           <FaEnvelope size={50} />
         </a>
       </div>
+      <a href={CV} className={styles.cv}>
+        Baixar CV
+      </a>
     </div>
   );
 }
