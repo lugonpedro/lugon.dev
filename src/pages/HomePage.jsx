@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import MetaTags from "react-meta-tags";
 
 import lugon from "../assets/lugon.jpg";
+import NavbarMobile from "../components/NavbarMobile";
 
 function HomePage() {
   return (
@@ -21,6 +22,7 @@ function HomePage() {
         <meta property="og:image" content={lugon} />
       </MetaTags>
       <Navbar />
+      <NavbarMobile />
       <SectionAbout />
       <SectionSkills />
       <SectionProjects />
