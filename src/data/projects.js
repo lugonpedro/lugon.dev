@@ -49,7 +49,7 @@ export const projects = [
     image: mercadodasestrelas,
     summary:
       "Site de pedidos baseado em Star Wars, feito de acordo com as regras de negócio que foram pedidos, totalmente em React.",
-    link: "https://mercado-das-estrelas.vercel.app/",
+    link: "",
     source: "https://github.com/1ugon/mercado-das-estrelas",
   },
 ];
