@@ -11,7 +11,7 @@ import styles from "../styles/ProjectDetails.module.css";
 
 import MetaTags from "react-meta-tags";
 
-function ProjectDetails() {
+export default function ProjectDetails() {
   const params = useParams();
   const project = useProject(params.slang);
 
@@ -56,5 +56,3 @@ function ProjectDetails() {
     );
   }
 }
-
-export default ProjectDetails;

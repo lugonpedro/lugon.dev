@@ -10,7 +10,7 @@ import {
   FaHistory,
 } from "react-icons/fa";
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function NavbarMobile() {
   const [showing, setShowing] = useState(false);
@@ -27,56 +27,28 @@ function NavbarMobile() {
           <div>
             <ul>
               <li>
-                <Link
-                  activeClass="active"
-                  to="SectionAbout"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link to="/">
                   <span>
                     <FaUserAlt size={30} />
                   </span>
                 </Link>
               </li>
               <li>
-                <Link
-                  activeClass="active"
-                  to="SectionSkills"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link to="/skills">
                   <span>
                     <FaListAlt size={30} />
                   </span>
                 </Link>
               </li>
               <li>
-                <Link
-                  activeClass="active"
-                  to="SectionProjects"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link to="/projects">
                   <span>
                     <FaPencilRuler size={30} />
                   </span>
                 </Link>
               </li>
               <li>
-                <Link
-                  activeClass="active"
-                  to="SectionExperience"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link to="/experience">
                   <span>
                     <FaHistory size={30} />
                   </span>

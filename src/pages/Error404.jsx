@@ -6,7 +6,7 @@ import styles from "../styles/Error404.module.css";
 
 import MetaTags from "react-meta-tags";
 
-function Error404() {
+export default function Error404() {
   return (
     <>
       <MetaTags>
@@ -21,5 +21,3 @@ function Error404() {
     </>
   );
 }
-
-export default Error404;

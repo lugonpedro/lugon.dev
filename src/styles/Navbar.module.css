@@ -17,11 +17,15 @@
 
 .container li {
   list-style: none;
-  cursor: pointer;
-  color: var(--green);
 }
 
-.container li:hover {
+.container a {
+  color: var(--green);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container a:hover {
   color: var(--darkgreen);
   transition: 0.2s;
 }

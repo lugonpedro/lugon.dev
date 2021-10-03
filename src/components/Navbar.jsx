@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../styles/Navbar.module.css";
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,52 +10,16 @@ function Navbar() {
       <div>
         <ul>
           <li>
-            <Link
-              activeClass="active"
-              to="SectionAbout"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              SOBRE
-            </Link>
+            <Link to="/">SOBRE</Link>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="SectionSkills"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              HABILIDADES
-            </Link>
+            <Link to="/skills">HABILIDADES</Link>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="SectionProjects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              PROJETOS
-            </Link>
+            <Link to="/projects">PROJETOS</Link>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="SectionExperience"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              EXPERIÊNCIA
-            </Link>
+            <Link to="/experience">EXPERIÊNCIA</Link>
           </li>
         </ul>
       </div>

@@ -31,11 +31,14 @@
 
 .container li {
   list-style: none;
+}
+
+.container a {
   cursor: pointer;
   color: var(--green);
 }
 
-.container li:hover {
+.container a:hover {
   color: var(--darkgreen);
   transition: 0.2s;
 }
