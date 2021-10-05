@@ -1,23 +1,9 @@
-.mainButton {
-  display: none;
-  width: 15vw;
-  height: 10vh;
-  position: fixed;
-  padding: 3vh;
-  z-index: 1;
-}
-
-.mainButton span {
-  cursor: pointer;
-}
-
 .container {
   display: none;
   width: 100vw;
   height: 10vh;
   background-color: var(--primary);
   padding: 3vh 0;
-  position: fixed;
   z-index: 0;
 }
 
@@ -44,11 +30,7 @@
 }
 
 @media (max-width: 1080px) {
-  .mainButton {
-    display: inline-block;
-  }
-
   .container {
-    display: inline-block;
+    display: block;
   }
 }
