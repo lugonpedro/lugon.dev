@@ -25,7 +25,6 @@ export default function ProjectDetails() {
           <meta name="description" content={project.summary} />
           <meta property="og:image" content={project.image} />
         </MetaTags>
-
         <GoBackNav />
         <div className={styles.container}>
           <img src={project.image} alt={project.imagealt} />

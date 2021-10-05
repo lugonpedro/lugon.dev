@@ -11,7 +11,7 @@
 
 .container h1 {
   padding: 3rem 0;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .skills {
@@ -40,7 +40,7 @@
 @media (max-width: 1080px) {
   .container {
     padding: 0 20vh;
-    height: 112vh;
+    height: 102vh;
   }
 
   .skills {

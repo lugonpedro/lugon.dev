@@ -4,7 +4,6 @@ import styles from "../styles/Projects.module.css";
 
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
-import { FaArrowRight } from "react-icons/fa";
 
 import lugon from "../assets/lugon.jpg";
 
@@ -27,19 +26,18 @@ export default function SectionProjects() {
       <NavbarMobile />
       <div className={styles.container}>
         {projects.map((project) => (
-          <div className={styles.project} key={project.id}>
+          <Link
+            className={styles.project}
+            key={project.id}
+            to={`/project/${project.slang}`}
+          >
             <div className={styles.grid}>
               <div>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </div>
-              <div>
-                <Link to={`/project/${project.slang}`}>
-                  <FaArrowRight size={50} />
-                </Link>
-              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <Footer />

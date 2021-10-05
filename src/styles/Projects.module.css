@@ -30,8 +30,9 @@
   justify-content: space-between;
 }
 
-.project a {
-  color: var(--green);
+.container a {
+  text-decoration: none;
+  color: black;
 }
 
 .project a:hover {

@@ -11,9 +11,17 @@
 .container img {
   padding: 1vh;
   background-color: var(--green);
-  max-height: 50vh;
+  max-height: 40vh;
   margin: 5vh 0;
   border-radius: 30px;
+}
+
+.container h3 {
+  font-size: 1rem;
+}
+
+.container p {
+  font-size: 0.7rem;
 }
 
 .project {
