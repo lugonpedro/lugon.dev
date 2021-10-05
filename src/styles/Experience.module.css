@@ -10,11 +10,28 @@
 
 .container h1 {
   padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.container h2 {
+  font-size: 0.8rem;
+}
+
+.container h4 {
+  font-size: 0.6rem;
+}
+
+.container h5 {
+  font-size: 0.6rem;
+}
+
+.container p {
+  font-size: 0.7rem;
 }
 
 .container p,
 .container h5 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 1080px) {

@@ -19,7 +19,7 @@
 
 .container h1 {
   padding: 0.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .container h2 {
@@ -27,6 +27,7 @@
 }
 
 .container p {
+  font-size: 0.7rem;
   padding: 0 15vh;
   margin-bottom: 20px;
 }
@@ -50,8 +51,8 @@
 }
 
 .container .cv {
-  width: 200px;
-  height: 50px;
+  width: 10rem;
+  height: 3rem;
   border-radius: 30px;
   background-color: var(--green);
   border-width: 0;
@@ -60,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
 }
 
 .container .cv:hover {

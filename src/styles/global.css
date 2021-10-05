@@ -13,15 +13,3 @@
   --green: #81b622;
   --darkgreen: #59981a;
 }
-
-@media (max-width: 1080px) {
-  html {
-    font-size: 93%;
-  }
-}
-
-@media (max-width: 720px) {
-  html {
-    font-size: 85%;
-  }
-}
