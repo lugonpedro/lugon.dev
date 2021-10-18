@@ -9,11 +9,9 @@ export const projects = [
     slang: "mate",
     title: "Mate",
     description:
-      "App que facilita o encontro de quem utiliza o transporte escolar",
+      "Monitoramento Automatizado de Transporte Escolar e é um aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps.",
     image: mate,
     imagealt: "App Monitoramento Automatizado de Transporte Escolar",
-    summary:
-      "Monitoramento Automatizado de Transporte Escolar e é um aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps. Projeto atualmente arquivado.",
     link: "",
     source: "https://github.com/1ugon/Mate",
   },
@@ -21,11 +19,10 @@ export const projects = [
     id: 2,
     slang: "onichan",
     title: "Bot Onichan",
-    description: "Bot de Discord que mostra informações do My Anime List",
+    description:
+      "Bot de Discord feito com o Discord JS integrando também a API jikan-node que faz conexão com o My Anime List, sendo capaz de pegar perfis de usuários, animes, mangás, personagens, pessoas, e muitas coisas mais. Projeto open source feito por pura diversão e vontade de aprender tecnologias novas.",
     image: onichan,
     imagealt: "Onichan Bot",
-    summary:
-      "Bot de Discord feito com o Discord JS integrando também a API jikan-node que faz conexão com o My Anime List, sendo capaz de pegar perfis de usuários, animes, mangás, personagens, pessoas, e muitas coisas mais. Projeto open source feito por pura diversão e vontade de aprender tecnologias novas.",
     link: "https://discord.com/oauth2/authorize?client_id=805520334111375410&scope=bot&permissions=8",
     source: "https://github.com/1ugon/bot-onichan",
   },
@@ -33,11 +30,10 @@ export const projects = [
     id: 3,
     slang: "festivaltf",
     title: "Festival Transfeminista",
-    description: "Site interativo criado para festival online",
+    description:
+      "Site interativo para festival feito em React, de acordo com as necessidades e vontades do cliente, com o intuito de agregar valor ao festival que ocorre em Coimbra e precisava de um espaço online por questões pandêmicas.",
     image: festivaltf,
     imagealt: "Festival Transfeminista",
-    summary:
-      "Site interativo para festival feito em React, de acordo com as necessidades e vontades do cliente, com o intuito de agregar valor ao festival que ocorre em Coimbra e precisava de um espaço online por questões pandêmicas.",
     link: "https://www.festivaltransfeminista.com/",
     source: "https://github.com/1ugon/festivaltf",
   },
@@ -45,10 +41,9 @@ export const projects = [
     id: 4,
     slang: "mercadodasestrelas",
     title: "Mercado das Estrelas",
-    description: "Site feito para processo seletivo em empresa",
-    image: mercadodasestrelas,
-    summary:
+    description:
       "Site de pedidos baseado em Star Wars, feito de acordo com as regras de negócio que foram pedidos, totalmente em React.",
+    image: mercadodasestrelas,
     link: "",
     source: "https://github.com/1ugon/mercado-das-estrelas",
   },

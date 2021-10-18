@@ -22,7 +22,7 @@ export default function ProjectDetails() {
       <>
         <MetaTags>
           <title>{project.title}</title>
-          <meta name="description" content={project.summary} />
+          <meta name="description" content={project.description} />
           <meta property="og:image" content={project.image} />
         </MetaTags>
         <GoBackNav />
@@ -30,7 +30,7 @@ export default function ProjectDetails() {
           <img src={project.image} alt={project.imagealt} />
           <div className={styles.project}>
             <h3>{project.title}</h3>
-            <p>{project.summary}</p>
+            <p>{project.description}</p>
             <div className={styles.projectlinks}>
               {project.link === "" ? (
                 ""

@@ -23,6 +23,7 @@
   color: var(--green);
   cursor: pointer;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .container a:hover {

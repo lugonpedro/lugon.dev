@@ -11,7 +11,7 @@
 
 .container h1 {
   padding: 3rem 0;
-  font-size: 1rem;
+  font-size: 2.5rem;
 }
 
 .skills {
@@ -40,7 +40,7 @@
 @media (max-width: 1080px) {
   .container {
     padding: 0 20vh;
-    height: 102vh;
+    height: 112vh;
   }
 
   .skills {
@@ -51,5 +51,9 @@
   .tools {
     grid-template-columns: repeat(2, auto);
     gap: 2rem;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
   }
 }

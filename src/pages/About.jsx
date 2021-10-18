@@ -37,13 +37,13 @@ export default function About() {
         </p>
         <div className={styles.icons}>
           <a href="http://github.com/1ugon" title="GitHub">
-            <FaGithub size={30} />
+            <FaGithub size={50} />
           </a>
           <a href="https://www.linkedin.com/in/1ugon/" title="LinkedIn">
-            <FaLinkedin size={30} />
+            <FaLinkedin size={50} />
           </a>
           <a href="mailto:pedrolugonm@gmail.com" title="E-mail">
-            <FaEnvelope size={30} />
+            <FaEnvelope size={50} />
           </a>
         </div>
         <a href={CV} className={styles.cv}>

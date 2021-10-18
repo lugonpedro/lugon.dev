@@ -19,15 +19,11 @@
 
 .container h1 {
   padding: 0.5rem;
-  font-size: 2rem;
-}
-
-.container h2 {
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 .container p {
-  font-size: 0.7rem;
+  font-size: 1rem;
   padding: 0 15vh;
   margin-bottom: 20px;
 }
@@ -81,7 +77,12 @@
     border-radius: 50%;
   }
 
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
   .container p {
     padding: 0 10vh;
+    font-size: 0.7rem;
   }
 }

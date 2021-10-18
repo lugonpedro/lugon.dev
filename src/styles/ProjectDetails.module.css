@@ -17,11 +17,11 @@
 }
 
 .container h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .container p {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .project {
@@ -65,5 +65,9 @@
 
   .projectlinks {
     padding: 2rem;
+  }
+
+  .container h3 {
+    font-size: 1rem;
   }
 }
