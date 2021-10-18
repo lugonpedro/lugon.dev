@@ -8,11 +8,6 @@
   justify-content: center;
 }
 
-.container h1 {
-  text-align: center;
-  margin-left: 1.5vh;
-}
-
 .project {
   border-color: var(--secundary);
   border-style: solid;
@@ -44,5 +39,13 @@
   .container {
     padding: 5vh;
     height: 102vh;
+  }
+
+  .container h3 {
+    font-size: 1rem;
+  }
+
+  .container p {
+    font-size: 0.5rem;
   }
 }

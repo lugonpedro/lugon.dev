@@ -9,7 +9,7 @@ export const projects = [
     slang: "mate",
     title: "Mate",
     description:
-      "Monitoramento Automatizado de Transporte Escolar e é um aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps.",
+      "Monitoramento Automatizado de Transporte Escolar é um aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, integra a API do Google Maps.",
     image: mate,
     imagealt: "App Monitoramento Automatizado de Transporte Escolar",
     link: "",
