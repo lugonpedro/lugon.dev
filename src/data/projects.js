@@ -1,7 +1,7 @@
 import mate from "../assets/mate.png";
 import onichan from "../assets/onichan.png";
 import festivaltf from "../assets/festivaltf.png";
-import mercadodasestrelas from "../assets/mercadodasestrelas.png";
+import embala from "../assets/embala.png";
 
 export const projects = [
   {
@@ -39,13 +39,13 @@ export const projects = [
   },
   {
     id: 4,
-    slang: "mercadodasestrelas",
-    title: "Mercado das Estrelas",
+    slang: "embala",
+    title: "Embala",
     description:
-      "Site de pedidos baseado em Star Wars, feito de acordo com as regras de negócio que foram pedidos, totalmente em React.",
-    image: mercadodasestrelas,
-    link: "",
-    source: "https://github.com/1ugon/mercado-das-estrelas",
+      "Aplicativos que se intercomunicam facilitando a coleta seletiva de embalagens recicláveis",
+    image: embala,
+    link: "https://play.google.com/store/apps/details?id=com.embala.user",
+    source: "",
   },
 ];
 
