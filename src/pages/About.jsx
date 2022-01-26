@@ -13,6 +13,11 @@ import Footer from "../components/Footer";
 import MetaTags from "react-meta-tags";
 
 export default function About() {
+  function getMail() {
+    navigator.clipboard.writeText("pedrolugonm@gmail.com");
+    alert("E-mail copiado com sucesso");
+  }
+
   return (
     <>
       <MetaTags>
@@ -36,13 +41,27 @@ export default function About() {
           React Native e NodeJS.
         </p>
         <div className={styles.icons}>
-          <a href="http://github.com/1ugon" title="GitHub">
+          <a
+            href="http://github.com/1ugon"
+            title="GitHub"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub size={50} />
           </a>
-          <a href="https://www.linkedin.com/in/1ugon/" title="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/1ugon/"
+            title="LinkedIn"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin size={50} />
           </a>
-          <a href="mailto:pedrolugonm@gmail.com" title="E-mail">
+          <a
+            href="mailto:pedrolugonm@gmail.com"
+            title="E-mail"
+            onClick={getMail}
+          >
             <FaEnvelope size={50} />
           </a>
         </div>
