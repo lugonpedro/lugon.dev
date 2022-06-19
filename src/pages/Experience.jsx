@@ -23,17 +23,28 @@ export default function Experience() {
       <div className={styles.container}>
         <div className={styles.formation}>
           <h1>FORMAÇÃO</h1>
+
           <h2>Sistemas da Informação</h2>
           <h3>Centro Universitário do Distrito Federal - UDF</h3>
-          <h4>(Janeiro/2019 - atual)</h4>
+          <h4>(Janeiro/2018 - Junho/2022)</h4>
+
           <h2>Ciência da Computação</h2>
           <h3>Centro Universitário de Brasília - CEUB</h3>
-          <h4>(Janeiro/2018 - Dezembro/2018)</h4>
+          <h4>(Janeiro/2017 - Dezembro/2017)</h4>
         </div>
         <div className={styles.experience}>
           <h1>EXPERIÊNCIA</h1>
+
+          <h2>Desenvolvedor Júnior C# .NET</h2>
+          <h4>(Fevereiro/2022 - atual)</h4>
+          <p>
+            Trabalhando remotamente na empresa OpenPort para ajudar a solucionar
+            problemas e dificuldades na criação de sistemas para gestão
+            portuária.
+          </p>
+
           <h2>Freelancer</h2>
-          <h4>(Janeiro/2021 - atual)</h4>
+          <h4>(Janeiro/2021 - Abril/2022)</h4>
           <p>
             Freelancer trabalhando com desenvolvimento web e mobile (focado no
             ecosistema React, React Native e NodeJS).
