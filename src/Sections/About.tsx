@@ -19,12 +19,11 @@ export default function SectionAbout() {
       <div className={styles.textContainer}>
         <h1>PEDRO LUGON</h1>
         <p>
-          Sou um estudante de Sistemas da Informação pela faculdade UDF, nascido
-          em 1998, tive minha primeira experiência com programação em 2017 com a
-          linguagem Java, desde então procuro conhecer tecnologias novas que me
-          tragam desempenho e praticidade para resolver problemas, atualmente
-          estou estudando desenvolvimento web e mobile, focado no ecosistema de
-          React, React Native e NodeJS.
+          Nascido em Brasília - DF, tive minha primeira experiência com
+          programação em 2017 com a linguagem Java, desde então procuro conhecer
+          tecnologias novas que me tragam desempenho e praticidade para resolver
+          problemas, atualmente estou trabalhando com C# .NET e estudando
+          desenvolvimento web e mobile, focado no ecosistema do React.
         </p>
         <div className={styles.icons}>
           <a
