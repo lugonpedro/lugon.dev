@@ -9,7 +9,7 @@ function GoBackNav() {
   return (
     <>
       <div className={styles.container}>
-        <Link to="/projects">
+        <Link to="/#projects">
           <FaArrowLeft color="black" className={styles.goBack} />
         </Link>
       </div>

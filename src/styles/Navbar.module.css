@@ -1,18 +1,29 @@
 .container {
   width: 100%;
-  height: 10vh;
-  background-color: var(--primary);
-  padding: 3vh 0;
+  padding: 2vh 0;
   position: fixed;
+}
+
+.container .mainButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2vh 5vw;
+}
+
+.container .navbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10vh 5vw;
 }
 
 .container ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 5vw;
-  font-size: 2vh;
+  flex-direction: column;
+  gap: 3vh;
 }
 
 .container li {
@@ -27,12 +38,6 @@
 }
 
 .container a:hover {
-  color: var(--darkgreen);
   transition: 0.2s;
-}
-
-@media (max-width: 1080px) {
-  .container {
-    display: none;
-  }
+  filter: brightness(0.8);
 }

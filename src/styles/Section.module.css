@@ -1,0 +1,193 @@
+.aboutContainer {
+  padding: 5vh 5vw;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer img {
+  max-width: 25vh;
+  max-height: 25vh;
+  border-radius: 50%;
+  padding: 1vh;
+  background-color: var(--green);
+  margin-left: 5vw;
+  text-align: center;
+}
+
+.aboutContainer .imageContainer {
+  width: 30%;
+  margin-top: 5vh;
+}
+
+.aboutContainer .textContainer {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.aboutContainer h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.aboutContainer p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 15vh;
+}
+
+.aboutContainer .icons {
+  margin: 1vw 3vh;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.aboutContainer .icons a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.aboutContainer a {
+  padding: 0px 1vh;
+}
+
+.aboutContainer .icons a:hover {
+  filter: brightness(0.8);
+  transition: 0.2s;
+}
+
+.skillsContainer {
+  padding: 5vh 0;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsContainer h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.skills {
+  padding: 5vh 0;
+  gap: 5vh;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.skills i {
+  padding: 0 2rem;
+}
+
+.skillsContainer i:hover {
+  color: var(--darkgreen);
+  transition: 0.8s;
+}
+
+.projectsContainer {
+  padding: 5vh 10vw;
+  background-color: var(--secundary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  border-color: var(--primary);
+  border-style: solid;
+  border-width: 0.5vh;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  display: flex;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectsContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.project a:hover {
+  color: var(--darkgreen);
+  transition: 0.2s;
+}
+
+.experienceContainer {
+  padding: 3vh 10vw;
+  width: 100%;
+  background-color: var(--secundary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experienceContainer h1 {
+  padding: 1vh 0;
+}
+
+.experienceContainer .block {
+  padding: 1.5vh 0;
+}
+
+@media (max-width: 1080px) {
+  .aboutContainer {
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  .aboutContainer .imageContainer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .aboutContainer .textContainer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .aboutContainer img {
+    display: none;
+  }
+
+  .aboutContainer p {
+    padding: 0 10vh;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+
+  .skillsContainer {
+    padding: 0 20vh;
+    height: 112vh;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+  }
+
+  .projectsContainer {
+    padding: 5vh;
+    height: 102vh;
+  }
+
+  .projectsContainer h3 {
+    font-size: 1rem;
+  }
+
+  .projectsContainer p {
+    font-size: 0.5rem;
+  }
+}

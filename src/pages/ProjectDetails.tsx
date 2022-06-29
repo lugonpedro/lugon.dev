@@ -2,7 +2,7 @@ import React from "react";
 import Error404 from "./Error404";
 import GoBackNav from "../components/GoBackNav";
 
-import { useParams } from "react-router-dom";
+import { useParams, Params } from "react-router-dom";
 import { useProject } from "../data/projects";
 
 import { FaGithub, FaLink } from "react-icons/fa";
@@ -12,8 +12,8 @@ import styles from "../styles/ProjectDetails.module.css";
 import MetaTags from "react-meta-tags";
 
 export default function ProjectDetails() {
-  const params = useParams();
-  const project = useProject(params.slang);
+  const { slang }: Readonly<Params<string>> = useParams();
+  const project = useProject(slang ? slang : "");
 
   if (!project) {
     return <Error404 />;
@@ -40,10 +40,10 @@ export default function ProjectDetails() {
                   <p>LINK</p>
                 </a>
               )}
-              {project.source === "" ? (
+              {project.link === "" ? (
                 ""
               ) : (
-                <a href={project.source}>
+                <a href={project.link}>
                   <FaGithub size={30} />
                   <p>CODE</p>
                 </a>
