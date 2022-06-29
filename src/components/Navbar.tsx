@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "../styles/Navbar.module.css";
-import {
-  FaUserAlt,
-  FaListAlt,
-  FaPencilRuler,
-  FaHistory,
-  FaBars,
-} from "react-icons/fa";
+import { FaUserAlt, FaListAlt, FaHistory, FaBars } from "react-icons/fa";
 
 import { AiFillCloseCircle } from "react-icons/ai";
 

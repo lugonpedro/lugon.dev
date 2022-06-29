@@ -1,9 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./styles/global.css";
+import ReactDOM from "react-dom";
 import Routes from "./Routes";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(<Routes />);
+import "./styles/global.css";
+
+ReactDOM.render(<Routes />, document.getElementById("root"));

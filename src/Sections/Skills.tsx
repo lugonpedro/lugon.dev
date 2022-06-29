@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import styles from "../styles/Section.module.css";
 
-import ReactTextTransition, { presets } from "react-text-transition";
+import ReactTextTransition from "react-text-transition";
 
 import {
   FaHtml5,
