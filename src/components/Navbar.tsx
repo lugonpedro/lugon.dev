@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 import styles from "../styles/Navbar.module.css";
-import { FaUserAlt, FaListAlt, FaHistory, FaBars } from "react-icons/fa";
+import {
+  FaUserAlt,
+  FaListAlt,
+  FaHistory,
+  FaBars,
+  FaToolbox,
+} from "react-icons/fa";
 
 import { AiFillCloseCircle } from "react-icons/ai";
 
@@ -34,9 +40,16 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link smooth to="/#skills">
+              <Link smooth to="/#projects">
                 <span>
                   <FaListAlt size={30} />
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link smooth to="/#skills">
+                <span>
+                  <FaToolbox size={30} />
                 </span>
               </Link>
             </li>

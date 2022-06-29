@@ -5,9 +5,10 @@ import GoBackNav from "../components/GoBackNav";
 import { useParams, Params } from "react-router-dom";
 import { useProject } from "../data/projects";
 
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 
 import styles from "../styles/ProjectDetails.module.css";
+import Footer from "../components/Footer";
 
 export default function ProjectDetails() {
   const { slang }: Readonly<Params<string>> = useParams();
@@ -24,26 +25,13 @@ export default function ProjectDetails() {
           <div className={styles.project}>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <div className={styles.projectlinks}>
-              {project.link === "" ? (
-                ""
-              ) : (
-                <a href={project.link}>
-                  <FaLink size={30} />
-                  <p>LINK</p>
-                </a>
-              )}
-              {project.link === "" ? (
-                ""
-              ) : (
-                <a href={project.link}>
-                  <FaGithub size={30} />
-                  <p>CODE</p>
-                </a>
-              )}
-            </div>
+            <a href={project.link} className={styles.link}>
+              <FaLink size={30} />
+              <p>LINK</p>
+            </a>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

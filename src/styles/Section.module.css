@@ -29,19 +29,18 @@
 }
 
 .aboutContainer h1 {
-  font-size: 3rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .aboutContainer p {
-  font-size: 1rem;
   text-align: center;
   padding: 0 15vh;
+  margin-bottom: 20px;
 }
 
 .aboutContainer .icons {
   margin: 1vw 3vh;
-  font-size: 1rem;
   text-align: center;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .skillsContainer {
-  padding: 5vh 0;
+  padding: 5vh 5vw;
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -69,7 +68,6 @@
 }
 
 .skillsContainer h1 {
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -90,7 +88,7 @@
 }
 
 .projectsContainer {
-  padding: 5vh 10vw;
+  padding: 5vh 5vw;
   background-color: var(--secundary);
   display: flex;
   flex-direction: column;
@@ -99,7 +97,7 @@
 }
 
 .project {
-  border-color: var(--primary);
+  border-color: var(--green);
   border-style: solid;
   border-width: 0.5vh;
   border-radius: 1rem;
@@ -144,7 +142,6 @@
 
 @media (max-width: 1080px) {
   .aboutContainer {
-    height: 60vh;
     flex-direction: column;
   }
 
@@ -159,35 +156,22 @@
   }
 
   .aboutContainer img {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .aboutContainer p {
     padding: 0 10vh;
-    font-size: 0.7rem;
-    margin-bottom: 20px;
-  }
-
-  .skillsContainer {
-    padding: 0 20vh;
-    height: 112vh;
   }
 
   .skills {
     grid-template-columns: repeat(2, auto);
-    gap: 2rem;
+    gap: 2vh;
   }
 
   .projectsContainer {
     padding: 5vh;
-    height: 102vh;
-  }
-
-  .projectsContainer h3 {
-    font-size: 1rem;
-  }
-
-  .projectsContainer p {
-    font-size: 0.5rem;
   }
 }
