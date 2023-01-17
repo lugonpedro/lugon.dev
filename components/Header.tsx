@@ -1,7 +1,5 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-
-import Image from "next/image";
 import profileIcon from "@/assets/profile.png";
 import { motion } from "framer-motion";
 
@@ -26,10 +24,10 @@ export default function Header({}: Props) {
         viewport={{ once: true }}
       />
       <div className="w-full px-20">
-        <h2 className="uppercase text-2xl text-green pb-2 font-bold md:text-3xl xl:text-4xl">
+        <h2 className="uppercase text-xl text-green pb-2 font-bold md:text-3xl xl:text-4xl">
           Pedro Lugon
         </h2>
-        <p className="text-xl font-bold md:text-2xl xl:text-3xl">
+        <p className="text-md font-bold md:text-2xl xl:text-3xl">
           <span>{text}</span>
           <Cursor cursorColor="#56cc77" />
         </p>

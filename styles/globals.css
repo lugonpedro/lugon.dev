@@ -6,11 +6,16 @@
 
 * {
   font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer components {
+  .pageTitle {
+    @apply tracking-[4px] text-green text-xl uppercase font-bold md:text-2xl xl:text-3xl text-center;
+  }
+
   .headerIcon {
-    @apply bg-neon p-2;
+    @apply bg-neon p-2 rounded-md duration-300 cursor-pointer hover:bg-green hover:text-neon;
   }
 
   .contactInput {

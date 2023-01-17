@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Modal from "./Modal";
 
 type Props = {};
 
@@ -39,23 +40,18 @@ export default function Contact({}: Props) {
   const formRef = useRef<any>();
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      className="h-screen flex relative flex-col text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center"
-    >
-      <h3 className="absolute top-24 tracking-[4px] text-green text-2xl uppercase font-bold">
-        Contato
-      </h3>
+    <>
+      <Modal />
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="h-screen flex relative flex-col text-center md:text-left px-10 justify-evenly mx-auto items-center"
+      >
+        <h3 className="pageTitle">Contato</h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-xl font-semibold text-center">
-          Mande uma mensagem! 😀
-        </h4>
-
-        <div className="space-y-10">
+        <div className="flex flex-col space-y-10">
           <form
             onSubmit={handleSubmit(onSubmit)}
             ref={formRef}
@@ -93,16 +89,19 @@ export default function Contact({}: Props) {
               Enviar
             </button>
           </form>
-          <div className="flex flex-row gap-8">
-            <a href="https://www.linkedin.com/in/lugonpedro/">
-              <AiFillLinkedin size={50} />
-            </a>
-            <a href="https://github.com/lugonpedro/">
-              <AiFillGithub size={50} />
-            </a>
+          <div className="space-y-2">
+            <p className="text-start">Se preferir:</p>
+            <div className="flex flex-row gap-8">
+              <a href="https://www.linkedin.com/in/lugonpedro/">
+                <AiFillLinkedin className="h-8 w-8 md:h-16 md:w-16" />
+              </a>
+              <a href="https://github.com/lugonpedro/">
+                <AiFillGithub className="h-8 w-8 md:h-16 md:w-16" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </>
   );
 }
