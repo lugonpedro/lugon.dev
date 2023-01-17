@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div
       className="bg-blue text-green h-screen snap-y snap-mandatory
-    overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-green/20 scrollbar-thumb-green"
+    overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-green/20 scrollbar-thumb-green"
     >
       <Head>
         <title>Pedro Lugon</title>
