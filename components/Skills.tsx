@@ -19,7 +19,7 @@ export default function Skills({}: Props) {
         Habilidades
       </h3>
 
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+      <div className="grid grid-cols-3 gap-5 md:grid-cols-4">
         {skills.map((skill) => (
           <Skill
             image={skill.image.src}
