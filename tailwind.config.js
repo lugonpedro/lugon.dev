@@ -12,6 +12,7 @@ module.exports = {
       neon: "#3423a6",
       purple: "#2e1760",
       white: "#FFF",
+      black: "#000",
     },
     extend: {},
   },
