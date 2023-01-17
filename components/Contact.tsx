@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
@@ -16,7 +16,13 @@ type Inputs = {
 };
 
 export default function Contact({}: Props) {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const [isOpened, setIsOpened] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
+  const formRef = useRef<any>();
+
+  const { register, handleSubmit, resetField } = useForm<Inputs>({
+    defaultValues: { name: "", email: "", subject: "", message: "" },
+  });
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     emailjs
       .sendForm(
@@ -27,21 +33,23 @@ export default function Contact({}: Props) {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          // TO-DO: Mensagem enviada com sucesso
+          setMessage("Enviado com sucesso 😀");
+          setIsOpened(true);
+          resetField("name");
+          resetField("email");
+          resetField("subject");
+          resetField("message");
         },
         (error) => {
-          console.log(error.text);
-          // TO-DO: Erro ao enviar mensagem
+          setMessage("Erro ao enviar 😢");
+          setIsOpened(true);
         }
       );
   };
 
-  const formRef = useRef<any>();
-
   return (
     <>
-      <Modal />
+      <Modal isOpened={isOpened} setIsOpened={setIsOpened} message={message} />
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
@@ -59,28 +67,32 @@ export default function Contact({}: Props) {
           >
             <div className="flex space-y-2 flex-col md:space-x-2 md:space-y-0 md:flex-row">
               <input
-                {...register("name")}
+                {...register("name", { required: true })}
                 placeholder="Nome"
                 className="contactInput"
                 type="text"
+                required
               />
               <input
-                {...register("email")}
+                {...register("email", { required: true })}
                 placeholder="E-mail"
                 className="contactInput"
                 type="email"
+                required
               />
             </div>
             <input
-              {...register("subject")}
+              {...register("subject", { required: true })}
               placeholder="Título"
               className="contactInput"
               type="text"
+              required
             />
             <textarea
-              {...register("message")}
+              {...register("message", { required: true })}
               placeholder="Mensagem"
               className="contactInput"
+              required
             />
             <button
               type="submit"
