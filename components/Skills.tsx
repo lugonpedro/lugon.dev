@@ -10,7 +10,7 @@ export default function Skills({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 3 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center"

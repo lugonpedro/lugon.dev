@@ -1,10 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { projects } from "@/data/data";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 type Props = {};
 
 export default function Projects({}: Props) {
+  function scrollRight() {
+    let width = window.innerWidth;
+    document.getElementById("container")!.scrollLeft += width;
+  }
+
+  function scrollLeft() {
+    let width = window.innerWidth;
+    document.getElementById("container")!.scrollLeft -= width;
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,19 +29,20 @@ export default function Projects({}: Props) {
       <div
         className="relative w-full flex overflow-x-scroll
        overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-green/20 scrollbar-thumb-green"
+        id="container"
       >
         {projects.map((project: Project) => (
           <div
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-20 md:p-44"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-10 md:p-44"
           >
             <motion.img
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 0, y: -200 }}
               transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={project.image.src}
-              className="w-44 h-44 object-cover md:w-64 md:h-64 xl:w-80 xl:h-80"
+              className="w-44 h-44 object-cover md:w-72 md:h-72 xl:w-96 xl:h-96"
               alt={project.alt}
             />
             <a href={project.link} title="Link">
@@ -43,6 +55,20 @@ export default function Projects({}: Props) {
             </p>
           </div>
         ))}
+      </div>
+      <div className="flex flex-row items-center justify-center">
+        <button
+          onClick={scrollLeft}
+          className="text-2xl md:text-3xl xl:text-4xl"
+        >
+          <AiOutlineLeft />
+        </button>
+        <button
+          onClick={scrollRight}
+          className="text-2xl md:text-3xl xl:text-4xl"
+        >
+          <AiOutlineRight />
+        </button>
       </div>
 
       <div className="w-full h-[500px] absolute top-[20%] bg-green/10 left-0 -skew-y-12"></div>

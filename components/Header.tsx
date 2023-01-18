@@ -33,8 +33,8 @@ export default function Header({}: Props) {
         </p>
         <motion.div
           className="p-10"
-          initial={{ y: -100, opacity: 0, scale: 0.5 }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{
             duration: 1.5,
           }}

@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
     title: "2021",
     header: "Javascript Fullstack",
     place: "Freelancer",
-    desc: "Fazia tanto desenvolvimento web quanto mobile, sempre focado no ecosistema React, de acordo com o que meu cliente desejasse, propunha ideias e considerações sobre o projeto, para que ficasse de acordo com suas necessidades",
+    desc: "Desenvolvimento web e mobile de acordo com o que meu cliente queria propunha ideias e considerações sobre o projeto de maneira assertiva e transparente, para que ficasse de acordo com suas necessidades",
     date: "(Janeiro/2021 - Abril/2022)",
   },
   {
@@ -37,14 +37,14 @@ export const experiences: Experience[] = [
     title: "2022",
     header: "C# .NET Júnior",
     place: "OpenPort",
-    desc: "Ajudava a solucionar problemas e criar saídas nas dificuldades dos sistemas de gestão portuária pré criados pela empresa",
+    desc: "Ajudava solucionando problemas e dificuldades nos processo de sistemas em gestão portuária",
     date: "(Fevereiro/2022 - Setembro/2022)",
   },
   {
     title: "2022",
     header: "Javascript Fullstack",
     place: "23 Games",
-    desc: "",
+    desc: "Desenvolvimento web para trazer conforto e produtividade em nossa plataforma",
     date: "(Julho/2022 - Atual)",
   },
 ];
@@ -102,20 +102,28 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
-    title: "Mate",
+    title: "Embala",
     description:
-      "Aplicativo feito em React Native para TCC na UDF, possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares.",
-    image: mate,
-    alt: "App Monitoramento Automatizado de Transporte Escolar",
-    link: "https://github.com/1ugon/Mate",
+      "Aplicativos feitos em React Native que se intercomunicam através do Firebase entre usuários e cooperativas, facilitando o processo de coleta de embalagens recicláveis",
+    image: embala,
+    alt: "Embala - Coleta de Recicláveis",
+    link: "https://play.google.com/store/apps/details?id=com.embala.user",
   },
   {
-    title: "Bot Onichan",
+    title: "Erasus",
     description:
-      "Bot de Discord feito com o Discord JS que faz conexão com o My Anime List, sendo capaz de pegar perfis de usuários, animes, mangás e muito mais.",
+      "Site feito em React + CSS modularizado para dar destaque ao curso online do ex jogador profissional de League of Legends",
     image: onichan,
-    alt: "Onichan Bot",
-    link: "https://github.com/1ugon/bot-onichan",
+    alt: "Erasus Curso Jungle Pro",
+    link: "https://www.erasus.com.br/",
+  },
+  {
+    title: "Mate",
+    description:
+      "Aplicativo feito em React Native para o Trabalho de Conclusão de Curso na faculdade UDF, que possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, com sistema de rotas e notas",
+    image: mate,
+    alt: "Monitoramento Automatizado de Transporte Escolar",
+    link: "https://github.com/1ugon/Mate",
   },
   {
     title: "Festival Transfeminista",
@@ -124,13 +132,5 @@ export const projects: Project[] = [
     image: festivaltf,
     alt: "Festival Transfeminista",
     link: "https://github.com/1ugon/festivaltf",
-  },
-  {
-    title: "Embala",
-    description:
-      "Aplicativos que se intercomunicam, entre usuário e cooperativa, facilitando a coleta de embalagens recicláveis.",
-    image: embala,
-    alt: "Embala",
-    link: "https://play.google.com/store/apps/details?id=com.embala.user",
   },
 ];

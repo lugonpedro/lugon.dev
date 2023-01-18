@@ -10,20 +10,14 @@ export default function Experience({}: Props) {
     <motion.div
       className="h-screen flex flex-col justify-evenly mx-auto px-10 max-w-7xl md:px-0 md:max-w-full"
       initial={{ opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 3 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
       <h3 className="pageTitle">Experiência</h3>
 
       <div className="">
-        <motion.div
-          className="w-full"
-          initial={{ x: 200, opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-        >
+        <div className="w-full">
           <Chrono
             items={experiences}
             mode="HORIZONTAL"
@@ -55,7 +49,7 @@ export default function Experience({}: Props) {
               </div>
             ))}
           </Chrono>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
