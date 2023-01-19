@@ -118,14 +118,6 @@ export const projects: Project[] = [
     link: "https://www.erasus.com.br/",
   },
   {
-    title: "Mate",
-    description:
-      "Aplicativo feito em React Native para o Trabalho de Conclusão de Curso na faculdade UDF, que possui o intuito de facilitar o encontro entre passageiros e motoristas de ônibus e vans escolares, com sistema de rotas e notas",
-    image: mate,
-    alt: "Monitoramento Automatizado de Transporte Escolar",
-    link: "https://github.com/1ugon/Mate",
-  },
-  {
     title: "Festival Transfeminista",
     description:
       "Site interativo para festival feito em React, com o intuito de agregar valor ao festival que ocorre em Coimbra e precisava de um espaço online por questões pandêmicas.",
