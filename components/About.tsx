@@ -34,14 +34,15 @@ export default function About({}: Props) {
           viewport={{ once: true }}
         >
           <p className="text-sm md:text-base">
-            Eu sou o Pedro 👋, também conhecido como Lugon, nasci em Brasília -
+            Eu sou o Pedro 👋, também conhecido como Lugon. Nasci em Brasília -
             DF e tive minha primeira experiência com programação em 2017 usando
             Java na faculdade, desde então mexi com OOP, HTML, CSS, JavaScript,
-            PHP e um pouco de Python, já no inicio de 2020 terminei meu primeiro
-            grande projeto sozinho 🚀, passei a estudar TDD e Design Patterns e
-            me senti livre para começar no mercado de trabalho e desde então
-            procuro conhecer, estudar e praticar tecnologias novas que me tragam
-            desempenho e praticidade ao resolver problemas!
+            PHP e um pouco de Python, e já no início de 2020 terminei meu
+            primeiro grande projeto sozinho 🚀. Passei a estudar TDD e Design
+            Patterns e me senti confiante e livre para ingressar no mercado de
+            trabalho. Desde então procuro conhecer, estudar e praticar
+            tecnologias novas que agreguem e me tragam desempenho e praticidade
+            ao resolver problemas!
           </p>
         </motion.div>
       </div>
