@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
@@ -110,14 +110,24 @@ export default function Contact({}: Props) {
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
             />
-            <button
+            <motion.button
               type="submit"
               className="border border-green rounded-md px-8 py-2 hover:bg-green duration-300 hover:text-neon font-bold"
+              initial={{ x: -200, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
             >
               Enviar
-            </button>
+            </motion.button>
           </form>
-          <div className="space-y-2">
+          <motion.div
+            className="space-y-2"
+            initial={{ x: 200, opacity: 0 }}
+            transition={{ duration: 1.2, delay: 2 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+          >
             <p className="text-start">Se preferir:</p>
             <div className="flex flex-row gap-8 ">
               <a
@@ -133,7 +143,7 @@ export default function Contact({}: Props) {
                 <AiFillGithub />
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </>
