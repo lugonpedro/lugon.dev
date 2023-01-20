@@ -34,7 +34,7 @@ export default function Projects({}: Props) {
         {projects.map((project: Project) => (
           <div
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-10 md:p-44"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[70vh]"
           >
             <motion.img
               initial={{ opacity: 0, y: -200 }}
@@ -42,7 +42,7 @@ export default function Projects({}: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={project.image.src}
-              className="w-44 h-44 object-cover md:w-72 md:h-72 xl:w-96 xl:h-96"
+              className="w-44 h-44 object-cover md:w-72 md:h-72 xl:w-[50%] xl:h-[100%]"
               alt={project.alt}
             />
             <a href={project.link} title="Link">
@@ -56,17 +56,11 @@ export default function Projects({}: Props) {
           </div>
         ))}
       </div>
-      <div className="flex flex-row items-center justify-center">
-        <button
-          onClick={scrollLeft}
-          className="text-2xl md:text-3xl xl:text-4xl"
-        >
+      <div className="flex flex-row items-center justify-center gap-10 md:gap-20">
+        <button onClick={scrollLeft} className="text-4xl md:text-6xl">
           <AiOutlineLeft />
         </button>
-        <button
-          onClick={scrollRight}
-          className="text-2xl md:text-3xl xl:text-4xl"
-        >
+        <button onClick={scrollRight} className="text-4xl md:text-6xl">
           <AiOutlineRight />
         </button>
       </div>

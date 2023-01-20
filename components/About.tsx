@@ -19,7 +19,7 @@ export default function About({}: Props) {
       <div className="flex flex-col text-center items-center md:flex-row md:text-left">
         <motion.img
           src={lugonImage.src}
-          initial={{ x: 200, opacity: 0 }}
+          initial={{ x: -200, opacity: 0 }}
           transition={{ duration: 1.5 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -28,7 +28,7 @@ export default function About({}: Props) {
 
         <motion.div
           className="space-y-10 px-0 md:px-10"
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ x: 200, opacity: 0 }}
           transition={{ duration: 1.5 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -40,7 +40,7 @@ export default function About({}: Props) {
             PHP e um pouco de Python, e já no início de 2020 terminei meu
             primeiro grande projeto sozinho 🚀. Passei a estudar TDD e Design
             Patterns e me senti confiante e livre para ingressar no mercado de
-            trabalho. Desde então procuro conhecer, estudar e praticar
+            trabalho, desde então procuro conhecer, estudar e praticar
             tecnologias novas que agreguem e me tragam desempenho e praticidade
             ao resolver problemas!
           </p>

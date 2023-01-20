@@ -18,7 +18,7 @@ export default function Header({}: Props) {
         src={profileIcon.src}
         alt="Pedro Lugon Image"
         className="rounded-full h-32 w-32 mx-auto object-cover border-green border-4 md:h-44 md:w-44 xl:h-60 xl:w-60"
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ x: -200, opacity: 0 }}
         transition={{ duration: 1.5 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -33,7 +33,7 @@ export default function Header({}: Props) {
         </p>
         <motion.div
           className="p-10"
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
             duration: 1.5,
