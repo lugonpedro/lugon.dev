@@ -1,11 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Chrono } from "react-chrono";
-import { experiences } from "@/data/data";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 export default function Experience({}: Props) {
+  const { t } = useTranslation();
+
+  const experiences: Experience[] = [
+    {
+      title: "2021",
+      header: "Javascript Fullstack",
+      place: "Freelancer",
+      desc: t("experience.desc1"),
+      date: t("experience.date1"),
+    },
+    {
+      title: "2021",
+      header: "Javascript Fullstack",
+      place: "Embala",
+      desc: t("experience.desc2"),
+      date: t("experience.date2"),
+    },
+    {
+      title: "2022",
+      header: "C# .NET Júnior",
+      place: "OpenPort",
+      desc: t("experience.desc3"),
+      date: t("experience.date3"),
+    },
+    {
+      title: "2022",
+      header: "Javascript Fullstack",
+      place: "",
+      desc: t("experience.desc4"),
+      date: t("experience.date4"),
+    },
+  ];
+
   return (
     <motion.div
       className="h-screen flex flex-col justify-evenly mx-auto px-10 max-w-7xl md:px-0 md:max-w-full"
@@ -14,7 +47,7 @@ export default function Experience({}: Props) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <h3 className="pageTitle">Experiência</h3>
+      <h3 className="pageTitle">{t("experience.title")}</h3>
 
       <div className="">
         <div className="w-full">
@@ -39,13 +72,16 @@ export default function Experience({}: Props) {
             classNames={{
               card: "experienceCard",
             }}
+            allowDynamicUpdate={true}
           >
-            {experiences.map((exp: Experience) => (
-              <div className="w-full px-12 md:px-0" key={exp.place}>
-                <h4 className="font-bold text-xl md:text-2xl">{exp.header}</h4>
-                <p className="text-sm md:text-md">{exp.place}</p>
-                <p className="text-md md:text-xl">{exp.desc}</p>
-                <p className="text-sm md:text-md mt-4">{exp.date}</p>
+            {experiences.map((experience) => (
+              <div className="w-full px-12 md:px-0" key={experience.place}>
+                <h4 className="font-bold text-xl md:text-2xl">
+                  {experience.header}
+                </h4>
+                <p className="text-sm md:text-md">{experience.place}</p>
+                <p className="text-md md:text-xl">{experience.desc}</p>
+                <p className="text-sm md:text-md mt-4">{experience.date}</p>
               </div>
             ))}
           </Chrono>

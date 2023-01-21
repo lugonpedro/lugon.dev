@@ -3,10 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 import { skills } from "@/data/data";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 export default function Skills({}: Props) {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,7 +18,7 @@ export default function Skills({}: Props) {
       viewport={{ once: true }}
       className="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="pageTitle">Habilidades</h3>
+      <h3 className="pageTitle">{t("skills.title")}</h3>
 
       <div className="grid grid-cols-3 gap-5 md:grid-cols-4">
         {skills.map((skill) => (

@@ -2,9 +2,9 @@ import React, { useRef, useState } from "react";
 import { delay, motion } from "framer-motion";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 import Modal from "./Modal";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 type Props = {};
 
@@ -19,6 +19,8 @@ export default function Contact({}: Props) {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
   const formRef = useRef<any>();
+
+  const { t } = useTranslation();
 
   const { register, handleSubmit, resetField } = useForm<Inputs>({
     defaultValues: { name: "", email: "", subject: "", message: "" },
@@ -57,7 +59,7 @@ export default function Contact({}: Props) {
         viewport={{ once: true }}
         className="h-screen flex relative flex-col text-center md:text-left px-10 justify-evenly mx-auto items-center"
       >
-        <h3 className="pageTitle">Contato</h3>
+        <h3 className="pageTitle">{t("contact.title")}</h3>
 
         <div className="flex flex-col space-y-10">
           <form
@@ -68,7 +70,7 @@ export default function Contact({}: Props) {
             <div className="flex space-y-2 flex-col md:space-x-2 md:space-y-0 md:flex-row">
               <motion.input
                 {...register("name", { required: true })}
-                placeholder="Nome"
+                placeholder={t("contact.name")!}
                 className="contactInput"
                 type="text"
                 required
@@ -79,7 +81,7 @@ export default function Contact({}: Props) {
               />
               <motion.input
                 {...register("email", { required: true })}
-                placeholder="E-mail"
+                placeholder="Email"
                 className="contactInput"
                 type="email"
                 required
@@ -91,7 +93,7 @@ export default function Contact({}: Props) {
             </div>
             <motion.input
               {...register("subject", { required: true })}
-              placeholder="Título"
+              placeholder={t("contact.subject")!}
               className="contactInput"
               type="text"
               required
@@ -102,7 +104,7 @@ export default function Contact({}: Props) {
             />
             <motion.textarea
               {...register("message", { required: true })}
-              placeholder="Mensagem"
+              placeholder={t("contact.message")!}
               className="contactInput"
               required
               initial={{ x: 200, opacity: 0 }}
@@ -118,7 +120,7 @@ export default function Contact({}: Props) {
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
             >
-              Enviar
+              {t("contact.button")}
             </motion.button>
           </form>
           <motion.div
@@ -128,7 +130,7 @@ export default function Contact({}: Props) {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            <p className="text-start">Se preferir:</p>
+            <p className="text-start">{t("contact.prefer")}</p>
             <div className="flex flex-row gap-8 ">
               <a
                 href="https://www.linkedin.com/in/lugonpedro/"

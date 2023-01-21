@@ -10,6 +10,10 @@
 }
 
 @layer components {
+  .languageSelected {
+    @apply opacity-20 hover:opacity-80;
+  }
+
   .pageTitle {
     @apply tracking-[4px] text-green text-xl uppercase font-bold md:text-2xl xl:text-3xl text-center;
   }

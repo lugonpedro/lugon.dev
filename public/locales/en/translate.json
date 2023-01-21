@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About",
+    "text": "Hi, I'm Pedro 👋, also known as Lugon. Born in Brasília, capital of Brazil, I had my first experience with programming in 2017, using Java at college. Since then I worked with OOP, HTML, CSS, JavaScript, PHP and a little bit of Python, and still at the beggining of 2020 I finished my first grand project alone 🚀. And so I started to study TDD and Design Patterns, which made me feel confident and free to join the job market, since then I seek to know, study and practice new tecnologies that accrete and bring me practicality and greater performance in solving problems!"
+  },
+  "experience": {
+    "title": "Experience",
+    "desc1": "Finish this",
+    "date1": "(January/2021 - April/2022)",
+    "desc2": "Finish this",
+    "date2": "(June/2021 - Current)",
+    "desc3": "Finish this",
+    "date3": "(February/2022 - September/2022)",
+    "desc4": "Finish this",
+    "date4": "(July/2022 - Current)"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "desc1": "Finish this",
+    "desc2": "Finish this",
+    "desc3": "Finish this"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "subject": "Title",
+    "message": "Message",
+    "button": "Submit",
+    "prefer": "If you prefer:"
+  },
+  "error": {
+    "text": "Page not found",
+    "button": "Go back"
+  }
+}

@@ -1,11 +1,41 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/data/data";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+
+import embala from "@/assets/projects/embala.jpg";
+import erasus from "@/assets/projects/erasus.png";
+import festivaltf from "@/assets/projects/festivaltf.png";
 
 type Props = {};
 
 export default function Projects({}: Props) {
+  const { t } = useTranslation();
+
+  const projects: Project[] = [
+    {
+      title: "Embala",
+      description: t("projects.desc1"),
+      image: embala,
+      alt: "Embala",
+      link: "https://play.google.com/store/apps/details?id=com.embala.user",
+    },
+    {
+      title: "Erasus",
+      description: t("projects.desc2"),
+      image: erasus,
+      alt: "Erasus",
+      link: "https://www.erasus.com.br/",
+    },
+    {
+      title: "Festival Transfeminista",
+      description: t("projects.desc3"),
+      image: festivaltf,
+      alt: "Festival Transfeminista",
+      link: "https://github.com/1ugon/festivaltf",
+    },
+  ];
+
   function scrollRight() {
     let width = window.innerWidth;
     document.getElementById("container")!.scrollLeft += width;
@@ -24,7 +54,7 @@ export default function Projects({}: Props) {
       viewport={{ once: true }}
       className="h-screen flex relative flex-col text-center md:text-left justify-evenly mx-auto items-center"
     >
-      <h3 className="pageTitle">Projetos</h3>
+      <h3 className="pageTitle">{t("projects.title")}</h3>
 
       <div
         className="relative w-full flex overflow-x-scroll
@@ -34,7 +64,7 @@ export default function Projects({}: Props) {
         {projects.map((project: Project) => (
           <div
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[70vh]"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[70vh] xl:justify-between xl:flex-row"
           >
             <motion.img
               initial={{ opacity: 0, y: -200 }}
@@ -42,23 +72,25 @@ export default function Projects({}: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={project.image.src}
-              className="w-44 h-44 object-cover md:w-72 md:h-72 xl:w-[50%] xl:h-[100%]"
+              className="object-cover w-52 h-44 md:w-96 md:h-72 xl:w-screen xl:h-96 xl:object-contain"
               alt={project.alt}
             />
-            <a href={project.link} title="Link">
-              <h4 className="uppercase font-bold text-md text-center md:text-xl xl:text-2xl underline hover:text-neon duration-300">
-                {project.title}
-              </h4>
-            </a>
-            <p className="text-sm text-center md:text-left md:text-md xl:text-xl">
-              {project.description}
-            </p>
+            <div className="xl:px-4">
+              <a href={project.link} title="Link">
+                <h4 className="uppercase font-bold text-md text-center md:text-xl xl:text-2xl underline hover:text-neon duration-300 md:w-max">
+                  {project.title}
+                </h4>
+              </a>
+              <p className="text-sm text-center md:text-left md:text-md xl:text-xl">
+                {project.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>
       <div className="flex flex-row items-center justify-center gap-10 md:gap-20">
         <button onClick={scrollLeft} className="text-4xl md:text-6xl">
-          <AiOutlineLeft />
+          <AiOutlineLeft className="w-full h-full" />
         </button>
         <button onClick={scrollRight} className="text-4xl md:text-6xl">
           <AiOutlineRight />

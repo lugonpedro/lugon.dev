@@ -2,10 +2,14 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import profileIcon from "@/assets/profile.png";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import Language from "./Language";
 
 type Props = {};
 
 export default function Header({}: Props) {
+  const { t } = useTranslation();
+
   const [text, count] = useTypewriter({
     words: ["Front-end", "Back-end", "Mobile", "Fullstack Javascript"],
     delaySpeed: 1000,
@@ -14,6 +18,7 @@ export default function Header({}: Props) {
 
   return (
     <header className="h-screen flex flex-col space-y-8 items-center justify-center text-center">
+      <Language />
       <motion.img
         src={profileIcon.src}
         alt="Pedro Lugon Image"
@@ -42,19 +47,19 @@ export default function Header({}: Props) {
         >
           <ul className="flex items-center justify-evenly text-sm uppercase flex-col gap-4 md:flex-row md:justify-center md:text-md xl:text-xl">
             <li className="headerIcon">
-              <a href="#about">Sobre</a>
+              <a href="#about">{t("nav.about")}</a>
             </li>
             <li className="headerIcon">
-              <a href="#experience">Experiência</a>
+              <a href="#experience">{t("nav.experience")}</a>
             </li>
             <li className="headerIcon">
-              <a href="#skills">Habilidades</a>
+              <a href="#skills">{t("nav.skills")}</a>
             </li>
             <li className="headerIcon">
-              <a href="#projects">Projetos</a>
+              <a href="#projects">{t("nav.projects")}</a>
             </li>
             <li className="headerIcon">
-              <a href="#contact">Contato</a>
+              <a href="#contact">{t("nav.contact")}</a>
             </li>
           </ul>
         </motion.div>

@@ -1,11 +1,13 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import lugonImage from "@/assets/lugon.jpg";
 
 type Props = {};
 
 export default function About({}: Props) {
+  const { t } = useTranslation("");
+
   return (
     <motion.div
       className="h-screen flex flex-col max-w-7xl px-10 justify-evenly mx-auto"
@@ -14,7 +16,7 @@ export default function About({}: Props) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <h3 className="pageTitle">Sobre</h3>
+      <h3 className="pageTitle">{t("about.title")}</h3>
 
       <div className="flex flex-col text-center items-center md:flex-row md:text-left">
         <motion.img
@@ -34,7 +36,7 @@ export default function About({}: Props) {
           viewport={{ once: true }}
         >
           <p className="text-sm md:text-base">
-            Eu sou o Pedro 👋, também conhecido como Lugon. Nasci em Brasília -
+            {/* Eu sou o Pedro 👋, também conhecido como Lugon. Nasci em Brasília -
             DF e tive minha primeira experiência com programação em 2017 usando
             Java na faculdade, desde então mexi com OOP, HTML, CSS, JavaScript,
             PHP e um pouco de Python, e já no início de 2020 terminei meu
@@ -42,7 +44,8 @@ export default function About({}: Props) {
             Patterns e me senti confiante e livre para ingressar no mercado de
             trabalho, desde então procuro conhecer, estudar e praticar
             tecnologias novas que agreguem e me tragam desempenho e praticidade
-            ao resolver problemas!
+            ao resolver problemas! */}
+            {t("about.text")}
           </p>
         </motion.div>
       </div>
