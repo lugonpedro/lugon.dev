@@ -41,7 +41,7 @@ export default function Experience({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-evenly mx-auto px-10 max-w-7xl md:px-0 md:max-w-full"
+      className="h-screen flex flex-col justify-center mx-auto max-w-7xl space-y-16 md:px-0 md:max-w-full"
       initial={{ opacity: 0 }}
       transition={{ duration: 3 }}
       whileInView={{ opacity: 1 }}
@@ -75,7 +75,7 @@ export default function Experience({}: Props) {
             allowDynamicUpdate={true}
           >
             {experiences.map((experience) => (
-              <div className="w-full px-12 md:px-0" key={experience.place}>
+              <div className="w-full px-6 md:px-0" key={experience.place}>
                 <h4 className="font-bold text-xl md:text-2xl">
                   {experience.header}
                 </h4>

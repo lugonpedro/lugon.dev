@@ -57,7 +57,7 @@ export default function Contact({}: Props) {
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="h-screen flex relative flex-col text-center md:text-left px-10 justify-evenly mx-auto items-center"
+        className="h-screen flex relative flex-col text-center md:text-left px-10 justify-center mx-auto items-center space-y-16"
       >
         <h3 className="pageTitle">{t("contact.title")}</h3>
 

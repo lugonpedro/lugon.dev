@@ -52,7 +52,7 @@ export default function Projects({}: Props) {
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="h-screen flex relative flex-col text-center md:text-left justify-evenly mx-auto items-center"
+      className="h-screen flex relative flex-col text-center md:text-left justify-center space-y-16 mx-auto items-center"
     >
       <h3 className="pageTitle">{t("projects.title")}</h3>
 
@@ -64,7 +64,7 @@ export default function Projects({}: Props) {
         {projects.map((project: Project) => (
           <div
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[70vh] xl:justify-between xl:flex-row"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[50vh] xl:justify-between xl:flex-row"
           >
             <motion.img
               initial={{ opacity: 0, y: -200 }}
