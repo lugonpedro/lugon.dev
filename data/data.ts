@@ -46,19 +46,19 @@ export const skills: Skill[] = [
     image: next,
   },
   {
+    title: "Tailwindcss",
+    image: tailwind,
+  },
+  {
     title: "Node",
     image: node,
   },
   {
-    title: "SQL",
+    title: "MySQL",
     image: mysql,
   },
   {
     title: "MongoDB",
     image: mongo,
-  },
-  {
-    title: "Tailwindcss",
-    image: tailwind,
   },
 ];

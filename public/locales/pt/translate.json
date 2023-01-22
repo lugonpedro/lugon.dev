@@ -14,7 +14,7 @@
     "title": "Experiência",
     "desc1": "Atuando no desenvolvimento web e mobile em projetos para diversos clientes, sempre alinhando e propondo ideias e considerações de maneira assertiva e transparente, para que o resultado ficasse de acordo com suas necessidades.",
     "date1": "(Janeiro/2021 - Abril/2022)",
-    "desc2": "Atuo no desenvolvimento de soluções no ramo de coleta seletiva de embalagens recicláveis, ajudando a cooperativa e os usuários que buscam um mundo mais sustentável a atingirem os seus objetivos.",
+    "desc2": "Atuo no desenvolvimento de soluções no ramo de coleta seletiva de embalagens recicláveis, ajudando a cooperativa e os usuários que buscam um mundo mais sustentável a atingirem seus objetivos.",
     "date2": "(Junho/2021 - Atual)",
     "desc3": "Atuando no solucionamento de problemas e dificuldades nos processos de sistema em gestão portuária.",
     "date3": "(Fevereiro/2022 - Setembro/2022)",
@@ -26,9 +26,9 @@
   },
   "projects": {
     "title": "Projetos",
-    "desc1": "Aplicativos feitos em React Native, por enquanto somente Android e em breve para iOS, que se conversam através do banco de dados Firebase e mostram a rota a traçar com ajuda do Google Maps, facilitando o processo de coleta de embalagens recicláveis entre usuários e cooperativas da sua área.",
-    "desc2": "Site feito em React e CSS para trazer credibilidade e destaque na internet ao curso online do jogador profissional de League of Legends.",
-    "desc3": "Site com imagens interativas feito com React e CSS para um festival que acontece em Coimbra, com o intuito de agregar valor ao evento e precisava de um espaço online por questões pandêmicas."
+    "desc1": "Aplicativos feitos em React Native, por enquanto somente Android e em breve para iOS, que se conversam através do banco de dados Firebase e mostram a rota a traçar com ajuda do Google Maps, facilitando o processo de coleta de embalagens recicláveis entre usuários e cooperativas na área.",
+    "desc2": "Site feito em React e CSS para trazer credibilidade e destaque na internet ao curso online do jogador profissional de League of Legends, Erasus.",
+    "desc3": "Site com imagens interativas feito com React e CSS para um festival que acontece em Coimbra - Portugal, com o intuito de agregar valor ao evento que precisava de um espaço online por questões pandêmicas."
   },
   "contact": {
     "title": "Contato",
