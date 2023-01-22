@@ -1,6 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import profileIcon from "@/assets/profile.png";
+import profileIcon from "@/assets/profile.jpg";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Language from "./Language";

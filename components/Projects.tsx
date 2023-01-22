@@ -64,7 +64,7 @@ export default function Projects({}: Props) {
         {projects.map((project: Project) => (
           <div
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 xl:max-h-[50vh] xl:justify-between xl:flex-row"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 md:max-h-[50vh] xl:justify-between xl:flex-row"
           >
             <motion.img
               initial={{ opacity: 0, y: -200 }}
@@ -88,7 +88,7 @@ export default function Projects({}: Props) {
           </div>
         ))}
       </div>
-      <div className="flex flex-row items-center justify-center gap-10 md:gap-20">
+      <div className="hidden md:flex flex-row items-center justify-center gap-10 md:gap-20">
         <button onClick={scrollLeft} className="text-4xl md:text-6xl">
           <AiOutlineLeft className="w-full h-full" />
         </button>
