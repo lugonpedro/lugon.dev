@@ -52,7 +52,7 @@ export default function Projects({}: Props) {
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="h-screen flex relative flex-col text-center md:text-left justify-center space-y-16 mx-auto items-center"
+      className="h-screen flex relative flex-col text-center  justify-center mx-auto items-center space-y-4 md:space-y-16 md:text-left"
     >
       <h3 className="pageTitle">{t("projects.title")}</h3>
 

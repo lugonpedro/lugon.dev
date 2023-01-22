@@ -46,7 +46,7 @@ export const skills: Skill[] = [
     image: next,
   },
   {
-    title: "Tailwindcss",
+    title: "Tailwind",
     image: tailwind,
   },
   {

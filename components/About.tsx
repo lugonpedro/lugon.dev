@@ -10,7 +10,7 @@ export default function About({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-center px-10 mx-auto max-w-7xl space-y-16"
+      className="h-screen flex flex-col justify-center px-10 mx-auto max-w-7xl space-y-4 md:space-y-16"
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
@@ -25,7 +25,7 @@ export default function About({}: Props) {
           transition={{ duration: 1.5 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-10 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-96 xl:h-96"
+          className="mb-4 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-96 xl:h-96"
         />
         <motion.div
           initial={{ x: 200, opacity: 0 }}
