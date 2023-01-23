@@ -55,6 +55,9 @@ export default function Projects({}: Props) {
       className="h-screen flex relative flex-col text-center  justify-center mx-auto items-center space-y-4 md:space-y-16 md:text-left"
     >
       <h3 className="pageTitle">{t("projects.title")}</h3>
+      <p className="z-10 text-md uppercase text-green/50 md:hidden">
+        {t("projects.swipe")}
+      </p>
 
       <div
         className="relative w-full flex overflow-x-scroll

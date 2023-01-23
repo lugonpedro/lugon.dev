@@ -10,7 +10,7 @@ export default function About({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-center px-10 mx-auto max-w-7xl space-y-4 md:space-y-16"
+      className="h-screen flex flex-col justify-center px-10 mx-auto relative max-w-7xl space-y-4 md:space-y-16"
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}

@@ -17,7 +17,7 @@ export default function Header({}: Props) {
   });
 
   return (
-    <header className="h-screen flex flex-col space-y-8 items-center justify-center text-center">
+    <header className="h-screen flex flex-col space-y-8 items-center justify-center text-center relative">
       <Language />
       <motion.img
         src={profileIcon.src}

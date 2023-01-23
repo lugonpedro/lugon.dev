@@ -25,7 +25,7 @@ export default function Language({}: Props) {
   };
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 relative">
       <span
         className={`fi fi-br text-2xl hover:cursor-pointer duration-300 rounded-sm md:text-3xl ${
           ptSelected ? "" : "languageSelected"

@@ -26,6 +26,7 @@
   },
   "projects": {
     "title": "Projects",
+    "swipe": "Swipe",
     "desc1": "Apps made in React Native, for now only on Android but soon also available for IOS, that communicate through the Firebase data base and show the routes to trace with Google Maps help, facilitating the process of collecting recyclable packaging between users and cooperatives in the area.",
     "desc2": "Website made in React and CSS to bring credibility and emphasis on the internet to the online course of the pro-player of League of Legends, Erasus.",
     "desc3": "Website with interactive images made with React and CSS for a festival that happens in Coimbra - Portugal, in order to aggregate value to the event that needed an online space for pandemic reasons."

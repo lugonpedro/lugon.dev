@@ -41,7 +41,7 @@ export default function Experience({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-center mx-auto max-w-7xl space-y-4 md:space-y-16 md:px-0 md:max-w-full"
+      className="h-screen flex flex-col justify-center mx-auto max-w-7xl relative space-y-4 md:space-y-16 md:px-0 md:max-w-full"
       initial={{ opacity: 0 }}
       transition={{ duration: 3 }}
       whileInView={{ opacity: 1 }}
