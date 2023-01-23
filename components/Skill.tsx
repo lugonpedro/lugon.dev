@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Skill({ image, title }: Skill) {
   return (
-    <div className="group relative flex flex-col hover:scale-125 duration-300">
+    <div className="group relative flex flex-col md:hover:scale-125 duration-300">
       <Image
         src={image}
         alt={title}
