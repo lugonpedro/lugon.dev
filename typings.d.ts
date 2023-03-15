@@ -4,6 +4,7 @@ type Experience = {
   place: string;
   desc: string;
   date: string;
+  techs: string[];
 };
 
 type Skill = {

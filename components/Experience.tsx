@@ -15,6 +15,15 @@ export default function Experience({}: Props) {
       place: "Freelancer",
       desc: t("experience.desc1"),
       date: t("experience.date1"),
+      techs: [
+        "HTML",
+        "CSS",
+        "React",
+        "React Native",
+        "NodeJs",
+        "Firebase",
+        "MongoDB",
+      ],
     },
     {
       title: "2021",
@@ -22,6 +31,7 @@ export default function Experience({}: Props) {
       place: "Embala",
       desc: t("experience.desc2"),
       date: t("experience.date2"),
+      techs: ["HTML", "CSS", "React", "React Native", "Firebase"],
     },
     {
       title: "2022",
@@ -29,13 +39,15 @@ export default function Experience({}: Props) {
       place: "OpenPort",
       desc: t("experience.desc3"),
       date: t("experience.date3"),
+      techs: ["HTML", "Javascript", "C#", "MySQL"],
     },
     {
       title: "2022",
       header: "Javascript Fullstack",
-      place: "",
+      place: "23 Games",
       desc: t("experience.desc4"),
       date: t("experience.date4"),
+      techs: ["HTML", "TailwindCSS", "React", "NodeJs", "MongoDB"],
     },
   ];
 
@@ -80,6 +92,13 @@ export default function Experience({}: Props) {
               </h4>
               <p className="text-sm md:text-md">{experience.place}</p>
               <p className="text-md md:text-xl">{experience.desc}</p>
+              <div className="flex flex-col items-start mt-2 md:flex-row md:items-center">
+                {experience.techs.map((tech, index) => (
+                  <p className="text-sm md:text-md md:first:before:content-[''] md:first:before:mx-0 md:before:content-['-'] md:before:mx-1">
+                    {tech}
+                  </p>
+                ))}
+              </div>
               <p className="text-sm md:text-md mt-4">{experience.date}</p>
             </div>
           ))}
