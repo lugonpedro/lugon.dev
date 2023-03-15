@@ -49,43 +49,41 @@ export default function Experience({}: Props) {
     >
       <h3 className="pageTitle">{t("experience.title")}</h3>
 
-      <div className="">
-        <div className="w-full">
-          <Chrono
-            items={experiences}
-            mode="HORIZONTAL"
-            cardPositionHorizontal="TOP"
-            theme={{
-              primary: "#56cc77",
-              secondary: "#3423a6",
-              cardBgColor: "#3423a6",
-              cardForeColor: "#56cc77",
-              titleColor: "white",
-              titleColorActive: "#56cc77",
-            }}
-            buttonTexts={{
-              first: "Primeiro",
-              last: "Último",
-              next: "Próximo",
-              previous: "Anterior",
-            }}
-            classNames={{
-              card: "experienceCard",
-            }}
-            allowDynamicUpdate={true}
-          >
-            {experiences.map((experience) => (
-              <div className="w-full px-6 md:px-0" key={experience.place}>
-                <h4 className="font-bold text-xl md:text-2xl">
-                  {experience.header}
-                </h4>
-                <p className="text-sm md:text-md">{experience.place}</p>
-                <p className="text-md md:text-xl">{experience.desc}</p>
-                <p className="text-sm md:text-md mt-4">{experience.date}</p>
-              </div>
-            ))}
-          </Chrono>
-        </div>
+      <div className="w-full xl:max-w-7xl xl:self-center">
+        <Chrono
+          items={experiences}
+          mode="HORIZONTAL"
+          cardPositionHorizontal="TOP"
+          theme={{
+            primary: "#56cc77",
+            secondary: "#3423a6",
+            cardBgColor: "#3423a6",
+            cardForeColor: "#56cc77",
+            titleColor: "white",
+            titleColorActive: "#56cc77",
+          }}
+          buttonTexts={{
+            first: "Primeiro",
+            last: "Último",
+            next: "Próximo",
+            previous: "Anterior",
+          }}
+          classNames={{
+            card: "experienceCard",
+          }}
+          allowDynamicUpdate={true}
+        >
+          {experiences.map((experience) => (
+            <div className="w-full px-6 md:px-0" key={experience.place}>
+              <h4 className="font-bold text-xl md:text-2xl">
+                {experience.header}
+              </h4>
+              <p className="text-sm md:text-md">{experience.place}</p>
+              <p className="text-md md:text-xl">{experience.desc}</p>
+              <p className="text-sm md:text-md mt-4">{experience.date}</p>
+            </div>
+          ))}
+        </Chrono>
       </div>
     </motion.div>
   );
