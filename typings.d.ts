@@ -1,4 +1,5 @@
 type Experience = {
+  key: number;
   title: string;
   header: string;
   place: string;

@@ -10,6 +10,7 @@ export default function Experience({}: Props) {
 
   const experiences: Experience[] = [
     {
+      key: 1,
       title: "2021",
       header: "Javascript Fullstack",
       place: "Freelancer",
@@ -26,6 +27,7 @@ export default function Experience({}: Props) {
       ],
     },
     {
+      key: 2,
       title: "2021",
       header: "Javascript Fullstack",
       place: "Embala",
@@ -34,6 +36,7 @@ export default function Experience({}: Props) {
       techs: ["HTML", "CSS", "React", "React Native", "Firebase"],
     },
     {
+      key: 3,
       title: "2022",
       header: "C# .NET Júnior",
       place: "OpenPort",
@@ -42,6 +45,7 @@ export default function Experience({}: Props) {
       techs: ["HTML", "Javascript", "C#", "MySQL"],
     },
     {
+      key: 4,
       title: "2022",
       header: "Javascript Fullstack",
       place: "23 Games",
@@ -86,7 +90,7 @@ export default function Experience({}: Props) {
           allowDynamicUpdate={true}
         >
           {experiences.map((experience) => (
-            <div className="w-full px-6 md:px-0" key={experience.place}>
+            <div className="w-full px-6 md:px-0" key={experience.key}>
               <h4 className="font-bold text-xl md:text-2xl">
                 {experience.header}
               </h4>
@@ -94,7 +98,10 @@ export default function Experience({}: Props) {
               <p className="text-md md:text-xl">{experience.desc}</p>
               <div className="flex flex-col items-start mt-2 md:flex-row md:items-center">
                 {experience.techs.map((tech, index) => (
-                  <p className="text-sm md:text-md md:first:before:content-[''] md:first:before:mx-0 md:before:content-['-'] md:before:mx-1">
+                  <p
+                    className="text-sm md:text-md md:first:before:content-[''] md:first:before:mx-0 md:before:content-['-'] md:before:mx-1"
+                    key={index}
+                  >
                     {tech}
                   </p>
                 ))}
