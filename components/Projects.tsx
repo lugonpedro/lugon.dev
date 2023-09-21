@@ -53,7 +53,7 @@ export default function Projects({}: Props) {
             title={project.title}
             href={project.link}
           >
-            <img
+            <motion.img
               className="rounded-t-lg object-cover w-full h-[250px]"
               src={project.image.src}
               alt={project.title}

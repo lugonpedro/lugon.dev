@@ -67,7 +67,7 @@ export default function Experience({}: Props) {
 
       <ol className="relative border-l border-green">
         {experiences.reverse().map((experience) => (
-          <li className="mb-10 ml-4">
+          <li className="mb-10 ml-4" key={experience.key}>
             <div className="absolute w-3 h-3 bg-green rounded-full mt-1.5 -left-1.5 border border-pearl"></div>
             <time className="mb-1 text-sm font-normal leading-none text-pearl">
               {experience.date}
