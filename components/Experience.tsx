@@ -57,7 +57,7 @@ export default function Experience({}: Props) {
 
   return (
     <motion.div
-      className="h-screen flex flex-col justify-center mx-auto max-w-7xl relative space-y-4 md:space-y-16 md:px-0 md:max-w-full"
+      className="min-h-screen flex flex-col justify-center mx-auto px-4 xl:max-w-[800px]"
       initial={{ opacity: 0 }}
       transition={{ duration: 3 }}
       whileInView={{ opacity: 1 }}
@@ -65,52 +65,32 @@ export default function Experience({}: Props) {
     >
       <h3 className="pageTitle">{t("experience.title")}</h3>
 
-      <div className="w-full xl:max-w-7xl xl:self-center">
-        <Chrono
-          items={experiences}
-          mode="HORIZONTAL"
-          cardPositionHorizontal="TOP"
-          theme={{
-            primary: "#56cc77",
-            secondary: "#3423a6",
-            cardBgColor: "#3423a6",
-            cardForeColor: "#56cc77",
-            titleColor: "white",
-            titleColorActive: "#56cc77",
-          }}
-          buttonTexts={{
-            first: "Primeiro",
-            last: "Último",
-            next: "Próximo",
-            previous: "Anterior",
-          }}
-          classNames={{
-            card: "experienceCard",
-          }}
-          allowDynamicUpdate={true}
-        >
-          {experiences.map((experience) => (
-            <div className="w-full px-6 md:px-0" key={experience.key}>
-              <h4 className="font-bold text-xl md:text-2xl">
-                {experience.header}
-              </h4>
-              <p className="text-sm md:text-md">{experience.place}</p>
-              <p className="text-md md:text-xl">{experience.desc}</p>
-              <div className="flex flex-col items-start mt-2 md:flex-row md:items-center">
-                {experience.techs.map((tech, index) => (
-                  <p
-                    className="text-sm md:text-md md:first:before:content-[''] md:first:before:mx-0 md:before:content-['-'] md:before:mx-1"
-                    key={index}
-                  >
-                    {tech}
-                  </p>
-                ))}
-              </div>
-              <p className="text-sm md:text-md mt-4">{experience.date}</p>
-            </div>
-          ))}
-        </Chrono>
-      </div>
+      <ol className="relative border-l border-green">
+        {experiences.reverse().map((experience) => (
+          <li className="mb-10 ml-4">
+            <div className="absolute w-3 h-3 bg-green rounded-full mt-1.5 -left-1.5 border border-pearl"></div>
+            <time className="mb-1 text-sm font-normal leading-none text-pearl">
+              {experience.date}
+            </time>
+            <h3 className="text-lg font-semibold text-pearl">
+              {experience.header} - {experience.place}
+            </h3>
+            <p className="text-base font-normal text-pearl">
+              {experience.desc}
+            </p>
+            <ul className="flex flex-col items-start mt-2 md:flex-row md:items-center">
+              {experience.techs.map((tech, index) => (
+                <li
+                  className="text-pearl text-sm md:text-md md:first:before:content-[''] md:first:before:mx-0 md:before:content-['-'] md:before:mx-1"
+                  key={index}
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ol>
     </motion.div>
   );
 }

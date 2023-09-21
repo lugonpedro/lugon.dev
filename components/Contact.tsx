@@ -114,7 +114,7 @@ export default function Contact({}: Props) {
             />
             <motion.button
               type="submit"
-              className="border border-green rounded-md px-8 py-2 hover:bg-green duration-300 hover:text-neon font-bold"
+              className="button"
               initial={{ x: -200, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -130,17 +130,19 @@ export default function Contact({}: Props) {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            <p className="text-start">{t("contact.prefer")}</p>
-            <div className="flex flex-row gap-8 ">
+            <p className="text-start text-pearl">{t("contact.prefer")}</p>
+            <div className="flex flex-row gap-8 text-green">
               <a
                 href="https://www.linkedin.com/in/lugonpedro/"
                 className="text-4xl md:text-5xl xl:text-6xl hover:-translate-y-2 duration-300"
+                title="LinkedIn"
               >
                 <AiFillLinkedin />
               </a>
               <a
                 href="https://github.com/lugonpedro/"
                 className="text-4xl md:text-5xl xl:text-6xl hover:-translate-y-2 duration-300"
+                title="GitHub"
               >
                 <AiFillGithub />
               </a>

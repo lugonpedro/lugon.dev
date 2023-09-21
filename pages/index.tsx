@@ -8,35 +8,32 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div
-      className="bg-blue text-green h-screen snap-y snap-mandatory
-    overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-green/20 scrollbar-thumb-green"
-    >
+    <div className="bg-background overflow-x-hidden h-screen scrollbar-thin scrollbar-track-green/20 scrollbar-thumb-green">
       <Head>
         <title>Pedro Lugon</title>
       </Head>
 
-      <section id="header" className="snap-start">
+      <section id="header">
         <Header />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about">
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section id="experience">
         <Experience />
       </section>
 
-      <section id="skills" className="snap-center">
-        <Skills />
-      </section>
-
-      <section id="projects" className="snap-center">
+      <section id="projects">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-center">
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="contact">
         <Contact />
       </section>
     </div>

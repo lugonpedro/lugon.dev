@@ -29,12 +29,12 @@ export default function Header({}: Props) {
         viewport={{ once: true }}
       />
       <div className="w-full px-20">
-        <h2 className="uppercase text-xl text-green pb-2 font-bold md:text-3xl xl:text-4xl">
+        <h2 className="uppercase text-xl text-pearl pb-2 font-bold md:text-3xl xl:text-4xl">
           Pedro Lugon
         </h2>
-        <p className="text-md font-bold md:text-2xl xl:text-3xl">
+        <p className="text-md text-pearl font-bold md:text-2xl xl:text-3xl">
           <span>{text}</span>
-          <Cursor cursorColor="#56cc77" />
+          <Cursor cursorColor="#57886C" />
         </p>
         <motion.div
           className="p-10"
@@ -46,19 +46,19 @@ export default function Header({}: Props) {
           viewport={{ once: true }}
         >
           <ul className="flex items-center justify-evenly text-sm uppercase flex-col gap-4 md:flex-row md:justify-center md:text-md xl:text-xl">
-            <li className="headerIcon">
+            <li className="button">
               <a href="#about">{t("nav.about")}</a>
             </li>
-            <li className="headerIcon">
+            <li className="button">
               <a href="#experience">{t("nav.experience")}</a>
             </li>
-            <li className="headerIcon">
-              <a href="#skills">{t("nav.skills")}</a>
-            </li>
-            <li className="headerIcon">
+            <li className="button">
               <a href="#projects">{t("nav.projects")}</a>
             </li>
-            <li className="headerIcon">
+            <li className="button">
+              <a href="#skills">{t("nav.skills")}</a>
+            </li>
+            <li className="button">
               <a href="#contact">{t("nav.contact")}</a>
             </li>
           </ul>

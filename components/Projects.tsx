@@ -36,71 +36,37 @@ export default function Projects({}: Props) {
     },
   ];
 
-  function scrollRight() {
-    let width = window.innerWidth;
-    document.getElementById("container")!.scrollLeft += width;
-  }
-
-  function scrollLeft() {
-    let width = window.innerWidth;
-    document.getElementById("container")!.scrollLeft -= width;
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="h-screen flex relative flex-col text-center  justify-center mx-auto items-center space-y-4 md:space-y-16 md:text-left"
+      className="min-h-screen flex relative flex-col text-center justify-center mx-auto items-center space-y-4 md:space-y-16 md:text-left"
     >
       <h3 className="pageTitle">{t("projects.title")}</h3>
-      <p className="z-10 text-md uppercase text-green/50 md:hidden">
-        {t("projects.swipe")}
-      </p>
-
-      <div
-        className="relative w-full flex overflow-x-scroll
-       overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-green/20 scrollbar-thumb-green"
-        id="container"
-      >
+      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project: Project) => (
-          <div
+          <a
+            className="max-w-sm bg-background border border-green rounded-lg text-pearl hover:bg-green/20 duration-300"
             key={project.title}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-3 p-10 justify-center md:p-44 md:max-h-[50vh] xl:justify-between xl:flex-row"
+            title={project.title}
+            href={project.link}
           >
-            <motion.img
-              initial={{ opacity: 0, y: -200 }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+            <img
+              className="rounded-t-lg object-cover w-full h-[250px]"
               src={project.image.src}
-              className="object-cover w-52 h-44 md:w-96 md:h-72 xl:w-screen xl:h-96 xl:object-contain"
-              alt={project.alt}
+              alt={project.title}
             />
-            <div className="xl:px-4">
-              <a href={project.link} title="Link">
-                <h4 className="uppercase font-bold text-md text-center md:text-xl xl:text-2xl underline hover:text-neon duration-300 md:w-max">
-                  {project.title}
-                </h4>
-              </a>
-              <p className="text-sm text-center md:text-left md:text-md xl:text-xl">
-                {project.description}
-              </p>
+            <div className="p-5">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                {project.title}
+              </h5>
+              <p className="mb-3 font-normal">{project.description}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
-      <div className="hidden md:flex flex-row items-center justify-center gap-10 md:gap-20">
-        <button onClick={scrollLeft} className="text-4xl md:text-6xl">
-          <AiOutlineLeft className="w-full h-full" />
-        </button>
-        <button onClick={scrollRight} className="text-4xl md:text-6xl">
-          <AiOutlineRight />
-        </button>
-      </div>
-
-      <div className="w-full h-[500px] absolute top-[20%] bg-green/10 left-0 -skew-y-12"></div>
     </motion.div>
   );
 }

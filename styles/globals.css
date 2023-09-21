@@ -14,16 +14,16 @@
     @apply opacity-20 hover:opacity-80;
   }
 
-  .pageTitle {
-    @apply tracking-[4px] text-green text-xl uppercase font-bold md:text-2xl xl:text-3xl text-center;
+  .button {
+    @apply p-2 rounded-md duration-300 cursor-pointer bg-green/20 hover:bg-green text-pearl;
   }
 
-  .headerIcon {
-    @apply bg-neon p-2 rounded-md duration-300 cursor-pointer hover:bg-green hover:text-neon;
+  .pageTitle {
+    @apply tracking-[4px] text-pearl text-xl uppercase font-bold md:text-2xl xl:text-3xl text-center mb-8;
   }
 
   .contactInput {
-    @apply outline-none bg-lightBlue rounded-sm border-b px-6 py-4 border-green text-green
-    placeholder-green transition-all focus:border-white focus:text-white;
+    @apply outline-none rounded-sm border-b px-6 py-4 bg-background border-pearl text-pearl
+    placeholder-pearl transition-all focus:border-white focus:text-white focus:bg-green/20;
   }
 }

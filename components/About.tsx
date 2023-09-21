@@ -33,7 +33,7 @@ export default function About({}: Props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm space-y-10 px-0 md:px-10 md:text-base">
+          <p className="text-sm text-pearl space-y-10 px-0 md:px-10 md:text-base">
             {t("about.text")}
           </p>
         </motion.div>
