@@ -19,7 +19,7 @@
   }
 
   .pageTitle {
-    @apply tracking-[4px] text-pearl text-xl uppercase font-bold md:text-2xl xl:text-3xl text-center mb-8;
+    @apply tracking-[4px] text-pearl text-xl uppercase font-bold text-center my-8 md:text-2xl xl:text-3xl;
   }
 
   .contactInput {

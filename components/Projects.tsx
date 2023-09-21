@@ -42,7 +42,7 @@ export default function Projects({}: Props) {
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="min-h-screen flex relative flex-col text-center justify-center mx-auto items-center space-y-4 md:space-y-16 md:text-left"
+      className="min-h-screen flex relative flex-col text-center justify-center mx-auto items-center space-y-4 px-4 md:space-y-16 md:text-left"
     >
       <h3 className="pageTitle">{t("projects.title")}</h3>
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
