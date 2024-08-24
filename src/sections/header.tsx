@@ -9,10 +9,10 @@ export function Header() {
     <>
       <AnimationEnter delay={0.5}>
         <ChangeLanguage />
-        <h1 className="font-semibold text-2xl">Pedro Lugon</h1>
+        <h1 className="font-semibold text-2xl mt-2">Pedro Lugon</h1>
       </AnimationEnter>
       <AnimationEnter delay={0.75}>
-        <p className="text-primary/80">{t("about.text")}</p>
+        <p className="text-primary/60">{t("about.text")}</p>
       </AnimationEnter>
       <AnimationEnter delay={1}>
         <div className="flex gap-4 mt-4 justify-center">
