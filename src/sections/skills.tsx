@@ -32,14 +32,11 @@ export function Skills() {
     <>
       <Separator />
       <h2 className="font-semibold text-2xl">{t("skills.title")}</h2>
-      <ul className="grid grid-cols-4 mt-4 gap-4 md:grid-cols-8 xl:grid-cols-12">
+      <ul className="grid grid-cols-4 mt-4 gap-1 md:grid-cols-8 xl:grid-cols-12">
         {data.map((skill) => (
-          <img
-            key={skill}
-            src={`/skills/${skill}.svg`}
-            title={skill}
-            className="w-full h-full bg-primary/20 p-1 rounded-full hover:bg-primary duration-500"
-          />
+          <div className="w-full h-full max-w-16 mx-auto bg-primary/20 p-4 rounded-full hover:bg-primary duration-500">
+            <img key={skill} src={`/skills/${skill}.svg`} title={skill} />
+          </div>
         ))}
       </ul>
     </>
