@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  @apply max-w-4xl mx-auto p-8;
-}
-
 a {
-  @apply hover:text-primary/60 duration-300;
+  @apply underline duration-500 decoration-2 decoration-dotted decoration-primary/50 hover:decoration-primary hover:decoration-solid;
 }

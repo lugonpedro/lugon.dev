@@ -1,27 +1,42 @@
 {
   "about": {
     "position": "Engenheiro de Software",
-    "text": "Eu sou o Pedro 👋, também conhecido como Lugon. Nasci em Brasília - DF e tive minha primeira experiência com programação em 2017 usando Java na faculdade, desde então mexi com POO, HTML, CSS, JavaScript, PHP e um pouco de Python, e já no início de 2020 terminei meu primeiro grande projeto sozinho 🚀. Passei a estudar TDD e Design Patterns e me senti confiante e livre para ingressar no mercado de trabalho, desde então procuro conhecer, estudar e praticar tecnologias novas que agreguem e me tragam desempenho e praticidade ao resolver problemas!"
+    "text": "Nascido em Brasília, tive minha primeira experiência com programação em 2017, utilizando Java na faculdade. Desde 2020 trabalho com React, Node e Java."
   },
-  "experience": {
-    "title": "Experiência",
-    "desc1": "Atuando no desenvolvimento web e mobile em projetos para diversos clientes, sempre alinhando e propondo ideias e considerações de maneira assertiva e transparente, para que o resultado ficasse de acordo com suas necessidades.",
-    "date1": "(Janeiro/2021 - Abril/2022)",
-    "desc2": "Atuo no desenvolvimento de soluções no ramo de coleta seletiva de embalagens recicláveis, ajudando a cooperativa e os usuários que buscam um mundo mais sustentável a atingirem seus objetivos.",
-    "date2": "(Junho/2021 - Atual)",
-    "desc3": "Atuando no solucionamento de problemas e dificuldades nos processos de sistema em gestão portuária.",
-    "date3": "(Fevereiro/2022 - Setembro/2022)",
-    "desc4": "Atuo na área de Desenvolvimento Web, de forma a trazer conforto e produtividade para toda a equipe na nossa plataforma.",
-    "date4": "(Julho/2022 - Atual)"
+  "experiences": {
+    "title": "experiências",
+    "embala": {
+      "position": "teste 1",
+      "description": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "openport": {
+      "position": "teste 2",
+      "description": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "23games": {
+      "position": "",
+      "description": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "akasoft": {
+      "position": "",
+      "description": "",
+      "start_date": "",
+      "end_date": ""
+    }
   },
   "projects": {
-    "title": "Projetos",
-    "desc1": "Aplicativos feitos em React Native, por enquanto somente Android e em breve para iOS, que se conversam através do banco de dados Firebase e mostram a rota a traçar com ajuda do Google Maps, facilitando o processo de coleta de embalagens recicláveis entre usuários e cooperativas na área.",
-    "desc2": "Site feito em React e CSS para trazer credibilidade e destaque na internet ao curso online do jogador profissional de League of Legends, Erasus.",
-    "desc3": "Site com imagens interativas feito com React e CSS para um festival que acontece em Coimbra - Portugal, com o intuito de agregar valor ao evento que precisava de um espaço online por questões pandêmicas."
-  },
-  "error": {
-    "text": "Página não encontrada",
-    "button": "Voltar"
+    "title": "projetos",
+    "historiaonline": "Teste 1",
+    "acclivity": "Teste 2",
+    "menthorize": "",
+    "iape": "",
+    "neverest": "",
+    "espiraledu": ""
   }
 }
