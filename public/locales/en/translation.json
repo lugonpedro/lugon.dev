@@ -1,0 +1,27 @@
+{
+  "about": {
+    "position": "Software Engineer",
+    "text": "Born in Brasília, I had my first experience with programming in 2017, using Java at college. Since 2020 working with React, Node and Java."
+  },
+  "experience": {
+    "title": "Experience",
+    "desc1": "Operating on web and mobile development on many projects and various clients, always aligning and putting considerate ideas assertively and transparently, so the results were shaped acordingly to their necessities.",
+    "date1": "(January/2021 - April/2022)",
+    "desc2": "I operate on the development of solutions on the branch of selection of recyclable packaging, helping the cooperative and the users that look for a more sustainable world to reach their goals.",
+    "date2": "(June/2021 - Current)",
+    "desc3": "Operating on the development of problem solving on the process of port management system.",
+    "date3": "(February/2022 - September/2022)",
+    "desc4": "Operating in web development, in a way to bring confort and productivity to all my team in our platform.",
+    "date4": "(July/2022 - Current)"
+  },
+  "projects": {
+    "title": "Projects",
+    "desc1": "Apps made in React Native, for now only on Android but soon also available for IOS, that communicate through the Firebase data base and show the routes to trace with Google Maps help, facilitating the process of collecting recyclable packaging between users and cooperatives in the area.",
+    "desc2": "Website made in React and CSS to bring credibility and emphasis on the internet to the online course of the pro-player of League of Legends, Erasus.",
+    "desc3": "Website with interactive images made with React and CSS for a festival that happens in Coimbra - Portugal, in order to aggregate value to the event that needed an online space for pandemic reasons."
+  },
+  "error": {
+    "text": "Page not found",
+    "button": "Go back"
+  }
+}
