@@ -1,42 +1,42 @@
 {
   "about": {
     "position": "Software Engineer",
-    "text": "Born in Brasília, I had my first experience with programming in 2017, using Java at college. Since 2020 working with React, Node and Java."
+    "text": "Born in Brasília, I had my first experience with programming in 2017, using Java at college. Since 2020 working with Java, Node, React and Angular."
   },
   "experiences": {
-    "title": "experiências",
+    "title": "experiences",
     "embala": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Fullstack Engineer",
+      "description": "I built a system that facilitated the connection between collectors and users who wanted to recycle materials, also allowing them to register their cooperative and the collectors who were part of it. The frontend was written in React for the website and React Native for the mobile apps, and the database used was Firebase.",
+      "start_date": "01/21",
+      "end_date": "01/22"
     },
     "openport": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Fullstack Developer",
+      "description": "I identified and resolved potential business rule errors and fixed bugs in one of the several C# .NET applications focused on Brazilian port management, working directly with HTML and JavaScript on the frontend and a MySQL database.",
+      "start_date": "01/22",
+      "end_date": "09/22"
     },
     "23games": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Fullstack Engineer",
+      "description": "I built a website for the gaming community, featuring news, a marketplace, profiles, and lobbies, with editable content through an admin panel. The frontend was written in Next.js, TypeScript, and Tailwind, while the backend was built with Node.js, Express, and Overnight.js, with tests written in Jest. The chosen database was MongoDB, and I implemented a CI/CD pipeline using GitHub Actions to deploy to Heroku.",
+      "start_date": "09/22",
+      "end_date": "01/24"
     },
     "akasoft": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Fullstack Engineer",
+      "description": "I built a municipal management system with modules including inventory management, accounting, and transparency portal. The frontend was written in Next.js, using TypeScript, Tailwind, and Shadcn, while the backend was built with Nest.js, with Jest for testing and a PostgreSQL database. I implemented a CI/CD pipeline using GitHub Actions and Docker for deployment to the cloud provider Railway.",
+      "start_date": "01/24",
+      "end_date": "06/24"
     }
   },
   "projects": {
-    "title": "projetos",
-    "historiaonline": "Teste 1",
-    "acclivity": "Teste 2",
-    "menthorize": "",
-    "iape": "",
-    "neverest": "",
-    "espiraledu": ""
+    "title": "projects",
+    "historiaonline": "historiaonline",
+    "acclivity": "acclivity",
+    "menthorize": "menthorize",
+    "iape": "I built a session scheduling system between patients and psychologists, with real-time chat functionality. The frontend was written in Next.js, using TypeScript, Tailwind, and Shadcn, while the backend was written in Nest.js, with Jest for testing and a MongoDB database. I also set up a CI/CD pipeline using GitHub Actions and Docker, deploying the application to the cloud provider fly.io.",
+    "neverest": "I built a lesson scheduling feature, with AWS and Google Calendar integration, between students and coaches on a gaming-focused platform. The frontend was written in Next.js, and the backend was refactored from microservices to a monolith using Nest.js. The database used was DynamoDB, and I set up a CI/CD pipeline using GitHub Actions to deploy to EC2 with pm2.",
+    "espiraledu": "espiraledu"
   }
 }

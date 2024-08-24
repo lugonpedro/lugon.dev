@@ -1,42 +1,42 @@
 {
   "about": {
     "position": "Engenheiro de Software",
-    "text": "Nascido em Brasília, tive minha primeira experiência com programação em 2017, utilizando Java na faculdade. Desde 2020 trabalho com React, Node e Java."
+    "text": "Nascido em Brasília, tive minha primeira experiência com programação em 2017, utilizando Java na faculdade. Desde 2020 trabalho com Java, Node, React and Angular."
   },
   "experiences": {
     "title": "experiências",
     "embala": {
-      "position": "teste 1",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Engenheiro Fullstack",
+      "description": "Construí um sistema que facilitava o encontro entre coletores e usuários que gostariam de reciclar materiais, podendo também cadastrar sua cooperativa e os coletores que faziam parte dela. O front foi escrito em React para o site e React Native para os aplicativos mobile e o banco de dados utilizado foi o Firebase.",
+      "start_date": "01/21",
+      "end_date": "01/22"
     },
     "openport": {
-      "position": "teste 2",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Desenvolvedor Fullstack",
+      "description": "Apontava eventuais erros de regra de negócio arrumava bugs em uma das várias aplicações escritas em C# .NET voltadas para gestão portuária brasileira, trabalhei diretamente com HTML e Javascript no front e banco de dados MySQL.",
+      "start_date": "01/22",
+      "end_date": "09/22"
     },
     "23games": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Engenheiro Fullstack",
+      "description": "Construí um site de notícias, marketplace, perfis e lobbies para o público gamer, com conteúdo editável através de um painel para os administradores. O front foi escrito em Next, Typescript e Tailwind, já o back em Node com Express e overnightjs e testes escritos em Jest, o banco de dados escolhido foi MongoDB, implementei a esteira de CI/CD com GitHub Actions para deploy no Heroku.",
+      "start_date": "09/22",
+      "end_date": "01/24"
     },
     "akasoft": {
-      "position": "",
-      "description": "",
-      "start_date": "",
-      "end_date": ""
+      "position": "Engenheiro Fullstack",
+      "description": "Construí um sistema de gerenciamento de prefeituras com alguns dos módulos sendo almoxarifado, contabilidade e portal de transparência. O front foi escrito em Next, juntamente com Typescript, Tailwind e Shadcn, já o back em Nest juntamente com Jest para testes e banco de dados PostgreSQL, implementei a esteira de CI/CD com GitHub Actions e Docker para deploy no cloud provider Railway.",
+      "start_date": "01/24",
+      "end_date": "06/24"
     }
   },
   "projects": {
     "title": "projetos",
-    "historiaonline": "Teste 1",
-    "acclivity": "Teste 2",
-    "menthorize": "",
-    "iape": "",
-    "neverest": "",
-    "espiraledu": ""
+    "historiaonline": "historiaonline",
+    "acclivity": "acclivity",
+    "menthorize": "menthorize",
+    "iape": "Construí um sistema de agendamento de sessões entre pacientes e psicólogos, com chat em tempo real. O front foi escrito em Next, juntamente com Typescript, Tailwind e Shadcn, já o back foi escrito em Nest com Jest para testes e banco de dados MongoDB, fiz a esteira de CI/CD com GitHub Actions e Docker para subir no cloud provider fly.io.",
+    "neverest": "Construí uma funcionalidade de agendamento de aulas, com integração AWS e Google Calendar, entre os alunos e coachs em uma plataforma focada em jogos. O front foi escrito em Next, e o back foi refatorado de microsserviços para monolito com Nest, o banco de dados utilizado foi o DynamoDB e realizei a esteira de CI/CD com GitHub Actions para subir no EC2 com pm2.",
+    "espiraledu": "espiraledu"
   }
 }
