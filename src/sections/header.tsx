@@ -9,7 +9,7 @@ export function Header() {
     <>
       <AnimationEnter delay={0.5}>
         <ChangeLanguage />
-        <h1 className="font-semibold">Pedro Lugon</h1>
+        <h1 className="font-semibold text-2xl">Pedro Lugon</h1>
       </AnimationEnter>
       <AnimationEnter delay={0.75}>
         <p className="text-primary/80">{t("about.text")}</p>
