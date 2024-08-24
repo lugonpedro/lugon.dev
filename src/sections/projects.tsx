@@ -4,22 +4,18 @@ import { Separator } from "../components/separator";
 export function Projects() {
   const { t } = useTranslation();
 
-  const data = [
-    "historiaonline",
-    "acclivity",
-    "menthorize",
-    "iape",
-    "neverest",
-    "espiraledu",
-  ];
+  const data = ["iape", "neverest", "espiraledu"];
 
   return (
     <>
       <Separator />
-      <p className="font-semibold">{t("projects.title")}</p>
-      <ul>
+      <h2 className="font-semibold text-2xl">{t("projects.title")}</h2>
+      <ul className="flex flex-col gap-4 mt-4">
         {data.map((proj) => (
-          <li key={proj}>{t(`projects.${proj}`)}</li>
+          <li key={proj}>
+            <span className="font-semibold text-xl">{proj}:</span>{" "}
+            {t(`projects.${proj}`)}
+          </li>
         ))}
       </ul>
     </>
