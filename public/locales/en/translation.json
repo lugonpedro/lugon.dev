@@ -32,9 +32,6 @@
   },
   "projects": {
     "title": "projects",
-    "historiaonline": "historiaonline",
-    "acclivity": "acclivity",
-    "menthorize": "menthorize",
     "iape": "I built a session scheduling system between patients and psychologists, with real-time chat functionality. The frontend was written in Next.js, using TypeScript, Tailwind, and Shadcn, while the backend was written in Nest.js, with Jest for testing and a MongoDB database. I also set up a CI/CD pipeline using GitHub Actions and Docker, deploying the application to the cloud provider fly.io.",
     "neverest": "I built a lesson scheduling feature, with AWS and Google Calendar integration, between students and coaches on a gaming-focused platform. The frontend was written in Next.js, and the backend was refactored from microservices to a monolith using Nest.js. The database used was DynamoDB, and I set up a CI/CD pipeline using GitHub Actions to deploy to EC2 with pm2.",
     "espiraledu": "espiraledu"

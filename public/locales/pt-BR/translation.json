@@ -32,9 +32,6 @@
   },
   "projects": {
     "title": "projetos",
-    "historiaonline": "historiaonline",
-    "acclivity": "acclivity",
-    "menthorize": "menthorize",
     "iape": "Construí um sistema de agendamento de sessões entre pacientes e psicólogos, com chat em tempo real. O front foi escrito em Next, juntamente com Typescript, Tailwind e Shadcn, já o back foi escrito em Nest com Jest para testes e banco de dados MongoDB, fiz a esteira de CI/CD com GitHub Actions e Docker para subir no cloud provider fly.io.",
     "neverest": "Construí uma funcionalidade de agendamento de aulas, com integração AWS e Google Calendar, entre os alunos e coachs em uma plataforma focada em jogos. O front foi escrito em Next, e o back foi refatorado de microsserviços para monolito com Nest, o banco de dados utilizado foi o DynamoDB e realizei a esteira de CI/CD com GitHub Actions para subir no EC2 com pm2.",
     "espiraledu": "espiraledu"
