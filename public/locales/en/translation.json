@@ -3,6 +3,9 @@
     "position": "Software Engineer",
     "text": "Born in Brasília, I had my first experience with programming in 2017, using Java at college. Since 2020 working with Java, Node, React and Angular."
   },
+  "skills": {
+    "title": "skills"
+  },
   "experiences": {
     "title": "experiences",
     "embala": {

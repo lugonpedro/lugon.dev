@@ -3,6 +3,9 @@
     "position": "Engenheiro de Software",
     "text": "Nascido em Brasília, tive minha primeira experiência com programação em 2017, utilizando Java na faculdade. Desde 2020 trabalho com Java, Node, React and Angular."
   },
+  "skills": {
+    "title": "habilidades"
+  },
   "experiences": {
     "title": "experiências",
     "embala": {
