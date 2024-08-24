@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #618b25;
+  border-radius: 50px;
+}
+
 a {
-  @apply underline duration-500 decoration-2 decoration-dotted decoration-primary/50 hover:decoration-primary hover:decoration-solid;
+  @apply underline duration-500 decoration-2 decoration-dotted decoration-primary/50 hover:decoration-[#618B25] hover:decoration-solid;
 }

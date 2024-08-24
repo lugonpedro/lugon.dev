@@ -10,7 +10,7 @@ export function ChangeLanguage() {
         onClick={() => changeLanguage("pt-BR")}
         className={
           i18n.language === "pt-BR"
-            ? "text-primary/60 decoration-solid pointer-events-none"
+            ? "text-primary/20 decoration-solid decoration-main pointer-events-none"
             : "cursor-pointer"
         }
       >
@@ -20,7 +20,7 @@ export function ChangeLanguage() {
         onClick={() => changeLanguage("en")}
         className={
           i18n.language === "en"
-            ? "text-primary/60 decoration-solid pointer-events-none"
+            ? "text-primary/20 decoration-solid pointer-events-none"
             : "cursor-pointer"
         }
       >
